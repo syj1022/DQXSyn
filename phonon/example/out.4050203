@@ -1,0 +1,1442 @@
+        _
+  _ __ | |__   ___  _ __   ___   _ __  _   _
+ | '_ \| '_ \ / _ \| '_ \ / _ \ | '_ \| | | |
+ | |_) | | | | (_) | | | | (_) || |_) | |_| |
+ | .__/|_| |_|\___/|_| |_|\___(_) .__/ \__, |
+ |_|                            |_|    |___/
+                                      2.38.1
+
+-------------------------[time 2025-04-22 01:43:43]-------------------------
+Compiled with OpenMP support (max 1 threads).
+Python version 3.13.3
+Spglib version 2.6.0
+
+Calculator interface: qe
+Crystal structure was read from "pw.in".
+Unit of length: au
+Displacements creation mode
+  Systematic displacements
+Settings:
+  Supercell: [2 2 2]
+  Primitive matrix (Auto):
+    [0.00000000e+00 1.00000000e+00 2.22044605e-16]
+    [1. 0. 1.]
+    [ 0.  0. -1.]
+Spacegroup: P1 (1)
+Number of symmetry operations in supercell: 8
+Use -v option to watch primitive cell, unit cell, and supercell structures.
+
+Generated number of supercells: 72
+"phonopy_disp.yaml" and supercells have been created.
+
+Summary of calculation was written in "phonopy_disp.yaml".
+-------------------------[time 2025-04-22 01:43:43]-------------------------
+                 _
+   ___ _ __   __| |
+  / _ \ '_ \ / _` |
+ |  __/ | | | (_| |
+  \___|_| |_|\__,_|
+
+✅ Successfully wrote: init-001.traj
+✅ Successfully wrote: init-002.traj
+✅ Successfully wrote: init-003.traj
+✅ Successfully wrote: init-004.traj
+✅ Successfully wrote: init-005.traj
+✅ Successfully wrote: init-006.traj
+✅ Successfully wrote: init-007.traj
+✅ Successfully wrote: init-008.traj
+✅ Successfully wrote: init-009.traj
+✅ Successfully wrote: init-010.traj
+✅ Successfully wrote: init-011.traj
+✅ Successfully wrote: init-012.traj
+✅ Successfully wrote: init-013.traj
+✅ Successfully wrote: init-014.traj
+✅ Successfully wrote: init-015.traj
+✅ Successfully wrote: init-016.traj
+✅ Successfully wrote: init-017.traj
+✅ Successfully wrote: init-018.traj
+✅ Successfully wrote: init-019.traj
+✅ Successfully wrote: init-020.traj
+✅ Successfully wrote: init-021.traj
+✅ Successfully wrote: init-022.traj
+✅ Successfully wrote: init-023.traj
+✅ Successfully wrote: init-024.traj
+✅ Successfully wrote: init-025.traj
+✅ Successfully wrote: init-026.traj
+✅ Successfully wrote: init-027.traj
+✅ Successfully wrote: init-028.traj
+✅ Successfully wrote: init-029.traj
+✅ Successfully wrote: init-030.traj
+✅ Successfully wrote: init-031.traj
+✅ Successfully wrote: init-032.traj
+✅ Successfully wrote: init-033.traj
+✅ Successfully wrote: init-034.traj
+✅ Successfully wrote: init-035.traj
+✅ Successfully wrote: init-036.traj
+✅ Successfully wrote: init-037.traj
+✅ Successfully wrote: init-038.traj
+✅ Successfully wrote: init-039.traj
+✅ Successfully wrote: init-040.traj
+✅ Successfully wrote: init-041.traj
+✅ Successfully wrote: init-042.traj
+✅ Successfully wrote: init-043.traj
+✅ Successfully wrote: init-044.traj
+✅ Successfully wrote: init-045.traj
+✅ Successfully wrote: init-046.traj
+✅ Successfully wrote: init-047.traj
+✅ Successfully wrote: init-048.traj
+✅ Successfully wrote: init-049.traj
+✅ Successfully wrote: init-050.traj
+✅ Successfully wrote: init-051.traj
+✅ Successfully wrote: init-052.traj
+✅ Successfully wrote: init-053.traj
+✅ Successfully wrote: init-054.traj
+✅ Successfully wrote: init-055.traj
+✅ Successfully wrote: init-056.traj
+✅ Successfully wrote: init-057.traj
+✅ Successfully wrote: init-058.traj
+✅ Successfully wrote: init-059.traj
+✅ Successfully wrote: init-060.traj
+✅ Successfully wrote: init-061.traj
+✅ Successfully wrote: init-062.traj
+✅ Successfully wrote: init-063.traj
+✅ Successfully wrote: init-064.traj
+✅ Successfully wrote: init-065.traj
+✅ Successfully wrote: init-066.traj
+✅ Successfully wrote: init-067.traj
+✅ Successfully wrote: init-068.traj
+✅ Successfully wrote: init-069.traj
+✅ Successfully wrote: init-070.traj
+✅ Successfully wrote: init-071.traj
+✅ Successfully wrote: init-072.traj
+/home/yingjies/apps/NeuralForceField/models
+📂 Processing: init-001.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:44:03       13.548060        0.130150
+BFGS:    1 01:44:06       13.541281        0.116362
+BFGS:    2 01:44:10       13.517009        0.066442
+BFGS:    3 01:44:14       13.514282        0.057798
+BFGS:    4 01:44:18       13.510988        0.058385
+BFGS:    5 01:44:22       13.509750        0.046078
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009006 meV/atom
+🎯 Mean force s.t.d. = 0.044995 eV/Å
+✅ Done.
+
+📂 Processing: init-002.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:44:27       13.548018        0.130733
+BFGS:    1 01:44:31       13.541199        0.116279
+BFGS:    2 01:44:35       13.517362        0.069319
+BFGS:    3 01:44:39       13.514554        0.062251
+BFGS:    4 01:44:43       13.511149        0.061126
+BFGS:    5 01:44:47       13.509771        0.046441
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.008439 meV/atom
+🎯 Mean force s.t.d. = 0.044085 eV/Å
+✅ Done.
+
+📂 Processing: init-003.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:44:52       13.548241        0.131411
+BFGS:    1 01:44:56       13.541389        0.116904
+BFGS:    2 01:45:00       13.517164        0.066160
+BFGS:    3 01:45:04       13.514340        0.054416
+BFGS:    4 01:45:08       13.511312        0.052761
+BFGS:    5 01:45:12       13.509829        0.043731
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.008301 meV/atom
+🎯 Mean force s.t.d. = 0.045114 eV/Å
+✅ Done.
+
+📂 Processing: init-004.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:45:17       13.547862        0.131394
+BFGS:    1 01:45:21       13.541098        0.115839
+BFGS:    2 01:45:25       13.517302        0.071089
+BFGS:    3 01:45:29       13.514478        0.062539
+BFGS:    4 01:45:33       13.511058        0.046751
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 5.999976 meV/atom
+🎯 Mean force s.t.d. = 0.046746 eV/Å
+✅ Done.
+
+📂 Processing: init-005.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:45:38       13.547897        0.130649
+BFGS:    1 01:45:42       13.541110        0.115761
+BFGS:    2 01:45:46       13.517215        0.071908
+BFGS:    3 01:45:50       13.514437        0.053530
+BFGS:    4 01:45:54       13.511358        0.057421
+BFGS:    5 01:45:58       13.509817        0.049323
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.008603 meV/atom
+🎯 Mean force s.t.d. = 0.045945 eV/Å
+✅ Done.
+
+📂 Processing: init-006.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:46:03       13.548033        0.129863
+BFGS:    1 01:46:08       13.541239        0.116495
+BFGS:    2 01:46:12       13.517309        0.070130
+BFGS:    3 01:46:16       13.514460        0.064616
+BFGS:    4 01:46:20       13.510936        0.049956
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.000418 meV/atom
+🎯 Mean force s.t.d. = 0.045815 eV/Å
+✅ Done.
+
+📂 Processing: init-007.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:46:26       13.547853        0.150101
+BFGS:    1 01:46:30       13.540942        0.118409
+BFGS:    2 01:46:35       13.518161        0.119074
+BFGS:    3 01:46:39       13.514868        0.112002
+BFGS:    4 01:46:43       13.511151        0.060314
+BFGS:    5 01:46:47       13.509760        0.053645
+BFGS:    6 01:46:51       13.508768        0.049306
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.012665 meV/atom
+🎯 Mean force s.t.d. = 0.047341 eV/Å
+✅ Done.
+
+📂 Processing: init-008.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:46:57       13.548360        0.156874
+BFGS:    1 01:47:01       13.541487        0.120862
+BFGS:    2 01:47:05       13.516932        0.071399
+BFGS:    3 01:47:08       13.514061        0.061804
+BFGS:    4 01:47:12       13.511246        0.060402
+BFGS:    5 01:47:16       13.509722        0.041017
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.008848 meV/atom
+🎯 Mean force s.t.d. = 0.044412 eV/Å
+✅ Done.
+
+📂 Processing: init-009.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:47:22       13.547592        0.132560
+BFGS:    1 01:47:26       13.540924        0.118811
+BFGS:    2 01:47:29       13.516828        0.072683
+BFGS:    3 01:47:33       13.514203        0.058916
+BFGS:    4 01:47:37       13.510791        0.061171
+BFGS:    5 01:47:41       13.509601        0.031304
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009396 meV/atom
+🎯 Mean force s.t.d. = 0.044146 eV/Å
+✅ Done.
+
+📂 Processing: init-010.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:47:47       13.548243        0.137463
+BFGS:    1 01:47:50       13.541385        0.119495
+BFGS:    2 01:47:54       13.517365        0.080578
+BFGS:    3 01:47:58       13.514242        0.063117
+BFGS:    4 01:48:02       13.511250        0.064301
+BFGS:    5 01:48:06       13.509651        0.042564
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009279 meV/atom
+🎯 Mean force s.t.d. = 0.045275 eV/Å
+✅ Done.
+
+📂 Processing: init-011.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:48:11       13.547674        0.132673
+BFGS:    1 01:48:15       13.541010        0.120290
+BFGS:    2 01:48:19       13.517428        0.103539
+BFGS:    3 01:48:23       13.514606        0.090028
+BFGS:    4 01:48:27       13.510610        0.062212
+BFGS:    5 01:48:31       13.509741        0.058535
+BFGS:    6 01:48:35       13.508263        0.042096
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.012232 meV/atom
+🎯 Mean force s.t.d. = 0.048064 eV/Å
+✅ Done.
+
+📂 Processing: init-012.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:48:40       13.547686        0.134676
+BFGS:    1 01:48:44       13.541036        0.120477
+BFGS:    2 01:48:48       13.516912        0.073769
+BFGS:    3 01:48:52       13.514030        0.070064
+BFGS:    4 01:48:56       13.510892        0.069981
+BFGS:    5 01:49:00       13.509624        0.058751
+BFGS:    6 01:49:04       13.508229        0.042837
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.013221 meV/atom
+🎯 Mean force s.t.d. = 0.048591 eV/Å
+✅ Done.
+
+📂 Processing: init-013.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:49:10       13.548454        0.258736
+BFGS:    1 01:49:14       13.541170        0.170613
+BFGS:    2 01:49:18       13.519514        0.174179
+BFGS:    3 01:49:23       13.515604        0.162193
+BFGS:    4 01:49:27       13.511553        0.070904
+BFGS:    5 01:49:32       13.510023        0.065582
+BFGS:    6 01:49:36       13.508985        0.071300
+BFGS:    7 01:49:40       13.682826        0.780766
+BFGS:    8 01:49:44       13.506886        0.055673
+BFGS:    9 01:49:48       13.506366        0.056893
+BFGS:   10 01:49:53       13.505625        0.088669
+BFGS:   11 01:49:57       13.504680        0.074870
+BFGS:   12 01:50:01       13.503285        0.058007
+BFGS:   13 01:50:06       13.502283        0.060939
+BFGS:   14 01:50:10       13.500957        0.056606
+BFGS:   15 01:50:14       13.500353        0.067729
+BFGS:   16 01:50:18       13.499613        0.062821
+BFGS:   17 01:50:23       13.498772        0.064804
+BFGS:   18 01:50:27       13.498197        0.047659
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.277344 eV
+📉 Energy s.t.d. = 6.033732 meV/atom
+🎯 Mean force s.t.d. = 0.060160 eV/Å
+✅ Done.
+
+📂 Processing: init-014.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:50:32       13.549153        0.309080
+BFGS:    1 01:50:37       13.541313        0.187067
+BFGS:    2 01:50:41       13.521248        0.236962
+BFGS:    3 01:50:45       13.516516        0.231318
+BFGS:    4 01:50:49       13.511551        0.111803
+BFGS:    5 01:50:53       13.510167        0.034794
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.005348 meV/atom
+🎯 Mean force s.t.d. = 0.046983 eV/Å
+✅ Done.
+
+📂 Processing: init-015.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:50:59       13.548808        0.295232
+BFGS:    1 01:51:03       13.541252        0.183007
+BFGS:    2 01:51:07       13.520454        0.186390
+BFGS:    3 01:51:11       13.515928        0.186915
+BFGS:    4 01:51:16       13.511838        0.114880
+BFGS:    5 01:51:20       13.510023        0.038592
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.006196 meV/atom
+🎯 Mean force s.t.d. = 0.047153 eV/Å
+✅ Done.
+
+📂 Processing: init-016.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:51:25       13.548816        0.283551
+BFGS:    1 01:51:30       13.541234        0.180738
+BFGS:    2 01:51:34       13.520442        0.242476
+BFGS:    3 01:51:38       13.515973        0.221762
+BFGS:    4 01:51:42       13.511492        0.086528
+BFGS:    5 01:51:47       13.510098        0.034258
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.006038 meV/atom
+🎯 Mean force s.t.d. = 0.046978 eV/Å
+✅ Done.
+
+📂 Processing: init-017.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:51:53       13.549242        0.240277
+BFGS:    1 01:51:57       13.542048        0.178642
+BFGS:    2 01:52:01       13.517879        0.082465
+BFGS:    3 01:52:05       13.514560        0.062332
+BFGS:    4 01:52:09       13.511595        0.051758
+BFGS:    5 01:52:13       13.509669        0.056509
+BFGS:    6 01:52:18       13.508078        0.049086
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.011989 meV/atom
+🎯 Mean force s.t.d. = 0.049364 eV/Å
+✅ Done.
+
+📂 Processing: init-018.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:52:23       13.546816        0.130128
+BFGS:    1 01:52:27       13.540169        0.116911
+BFGS:    2 01:52:32       13.517140        0.111833
+BFGS:    3 01:52:36       13.514105        0.101797
+BFGS:    4 01:52:40       13.510714        0.057158
+BFGS:    5 01:52:44       13.509384        0.040953
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009655 meV/atom
+🎯 Mean force s.t.d. = 0.045547 eV/Å
+✅ Done.
+
+📂 Processing: init-019.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:52:50       13.548490        0.192658
+BFGS:    1 01:52:54       13.541336        0.132757
+BFGS:    2 01:52:58       13.518610        0.144212
+BFGS:    3 01:53:02       13.515223        0.152875
+BFGS:    4 01:53:06       13.511205        0.098253
+BFGS:    5 01:53:10       13.509809        0.055048
+BFGS:    6 01:53:14       13.508771        0.047272
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.011671 meV/atom
+🎯 Mean force s.t.d. = 0.047413 eV/Å
+✅ Done.
+
+📂 Processing: init-020.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:53:20       13.548488        0.188533
+BFGS:    1 01:53:24       13.541300        0.134289
+BFGS:    2 01:53:28       13.518692        0.162885
+BFGS:    3 01:53:32       13.515515        0.157168
+BFGS:    4 01:53:36       13.510921        0.070097
+BFGS:    5 01:53:40       13.509817        0.053858
+BFGS:    6 01:53:44       13.508600        0.045859
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.012319 meV/atom
+🎯 Mean force s.t.d. = 0.047081 eV/Å
+✅ Done.
+
+📂 Processing: init-021.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:53:50       13.548597        0.198496
+BFGS:    1 01:53:54       13.541402        0.141547
+BFGS:    2 01:53:58       13.518799        0.158414
+BFGS:    3 01:54:02       13.515579        0.156544
+BFGS:    4 01:54:06       13.510900        0.078921
+BFGS:    5 01:54:10       13.509773        0.069128
+BFGS:    6 01:54:14       13.508812        0.063801
+BFGS:    7 01:54:19       14.834768        2.130040
+BFGS:    8 01:54:23       13.506625        0.059539
+BFGS:    9 01:54:27       13.505981        0.052793
+BFGS:   10 01:54:31       13.505478        0.080336
+BFGS:   11 01:54:35       13.504979        0.078169
+BFGS:   12 01:54:39       13.503787        0.067092
+BFGS:   13 01:54:43       13.503159        0.064720
+BFGS:   14 01:54:47       13.502478        0.060522
+BFGS:   15 01:54:52       13.501196        0.085639
+BFGS:   16 01:54:56       13.500597        0.088882
+BFGS:   17 01:55:00       13.499458        0.057342
+BFGS:   18 01:55:04       13.498799        0.066021
+BFGS:   19 01:55:08       13.497971        0.084703
+BFGS:   20 01:55:12       13.497493        0.076744
+BFGS:   21 01:55:16       13.496895        0.065112
+BFGS:   22 01:55:20       13.496332        0.055463
+BFGS:   23 01:55:24       13.495976        0.077205
+BFGS:   24 01:55:28       13.495573        0.047032
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.281250 eV
+📉 Energy s.t.d. = 6.052690 meV/atom
+🎯 Mean force s.t.d. = 0.062116 eV/Å
+✅ Done.
+
+📂 Processing: init-022.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:55:34       13.548399        0.183449
+BFGS:    1 01:55:38       13.541267        0.129046
+BFGS:    2 01:55:42       13.518610        0.160475
+BFGS:    3 01:55:46       13.515401        0.156964
+BFGS:    4 01:55:50       13.510959        0.086154
+BFGS:    5 01:55:54       13.509825        0.060962
+BFGS:    6 01:55:58       13.508954        0.053851
+BFGS:    7 01:56:02       14.897997        2.208010
+BFGS:    8 01:56:07       13.506958        0.059792
+BFGS:    9 01:56:11       13.506559        0.060918
+BFGS:   10 01:56:15       13.506075        0.072223
+BFGS:   11 01:56:19       13.505755        0.065994
+BFGS:   12 01:56:23       13.505213        0.069127
+BFGS:   13 01:56:27       13.504725        0.073048
+BFGS:   14 01:56:32       13.504489        0.100522
+BFGS:   15 01:56:36       13.503435        0.082940
+BFGS:   16 01:56:40       13.502947        0.079876
+BFGS:   17 01:56:44       13.502268        0.076132
+BFGS:   18 01:56:48       13.501457        0.078055
+BFGS:   19 01:56:52       13.501032        0.079846
+BFGS:   20 01:56:56       13.500447        0.076136
+BFGS:   21 01:57:01       13.499829        0.070533
+BFGS:   22 01:57:05       13.499458        0.071799
+BFGS:   23 01:57:09       13.498869        0.072103
+BFGS:   24 01:57:13       13.498526        0.066824
+BFGS:   25 01:57:17       13.497925        0.061920
+BFGS:   26 01:57:21       13.497625        0.060424
+BFGS:   27 01:57:26       13.497293        0.052305
+BFGS:   28 01:57:30       13.496979        0.046012
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.281250 eV
+📉 Energy s.t.d. = 6.058980 meV/atom
+🎯 Mean force s.t.d. = 0.064138 eV/Å
+✅ Done.
+
+📂 Processing: init-023.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:57:35       13.548480        0.172628
+BFGS:    1 01:57:39       13.541438        0.127270
+BFGS:    2 01:57:43       13.517833        0.093010
+BFGS:    3 01:57:47       13.514667        0.106979
+BFGS:    4 01:57:51       13.511330        0.081711
+BFGS:    5 01:57:56       13.509703        0.078203
+BFGS:    6 01:58:00       13.508512        0.045674
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.012494 meV/atom
+🎯 Mean force s.t.d. = 0.048739 eV/Å
+✅ Done.
+
+📂 Processing: init-024.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:58:05       13.547979        0.132799
+BFGS:    1 01:58:09       13.541046        0.118297
+BFGS:    2 01:58:13       13.517973        0.115603
+BFGS:    3 01:58:17       13.514982        0.111542
+BFGS:    4 01:58:21       13.511111        0.086619
+BFGS:    5 01:58:25       13.509738        0.048966
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.010033 meV/atom
+🎯 Mean force s.t.d. = 0.045322 eV/Å
+✅ Done.
+
+📂 Processing: init-025.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:58:31       13.548335        0.183141
+BFGS:    1 01:58:35       13.541270        0.124585
+BFGS:    2 01:58:39       13.518347        0.158370
+BFGS:    3 01:58:43       13.515051        0.158358
+BFGS:    4 01:58:47       13.511096        0.091174
+BFGS:    5 01:58:51       13.509842        0.047196
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.007308 meV/atom
+🎯 Mean force s.t.d. = 0.044504 eV/Å
+✅ Done.
+
+📂 Processing: init-026.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:58:57       13.548613        0.206226
+BFGS:    1 01:59:01       13.541382        0.144659
+BFGS:    2 01:59:05       13.518806        0.169350
+BFGS:    3 01:59:09       13.515516        0.169134
+BFGS:    4 01:59:13       13.511148        0.091009
+BFGS:    5 01:59:17       13.509871        0.044249
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.007417 meV/atom
+🎯 Mean force s.t.d. = 0.045273 eV/Å
+✅ Done.
+
+📂 Processing: init-027.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:59:23       13.547900        0.130775
+BFGS:    1 01:59:27       13.541066        0.116916
+BFGS:    2 01:59:31       13.517775        0.135177
+BFGS:    3 01:59:35       13.514827        0.127857
+BFGS:    4 01:59:39       13.510843        0.065674
+BFGS:    5 01:59:43       13.509824        0.049836
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.007230 meV/atom
+🎯 Mean force s.t.d. = 0.043857 eV/Å
+✅ Done.
+
+📂 Processing: init-028.traj
+      Step     Time          Energy          fmax
+BFGS:    0 01:59:49       13.549008        0.235956
+BFGS:    1 01:59:53       13.541608        0.167558
+BFGS:    2 01:59:57       13.519156        0.183789
+BFGS:    3 02:00:01       13.515750        0.187404
+BFGS:    4 02:00:05       13.511060        0.101084
+BFGS:    5 02:00:09       13.509924        0.047636
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.007040 meV/atom
+🎯 Mean force s.t.d. = 0.044429 eV/Å
+✅ Done.
+
+📂 Processing: init-029.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:00:14       13.548083        0.135214
+BFGS:    1 02:00:18       13.541194        0.116252
+BFGS:    2 02:00:22       13.517558        0.105703
+BFGS:    3 02:00:26       13.514531        0.118674
+BFGS:    4 02:00:30       13.511305        0.060539
+BFGS:    5 02:00:34       13.509824        0.044996
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.008451 meV/atom
+🎯 Mean force s.t.d. = 0.045130 eV/Å
+✅ Done.
+
+📂 Processing: init-030.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:00:39       13.548320        0.165637
+BFGS:    1 02:00:43       13.541240        0.121684
+BFGS:    2 02:00:47       13.518382        0.117885
+BFGS:    3 02:00:51       13.515040        0.127677
+BFGS:    4 02:00:55       13.511357        0.089087
+BFGS:    5 02:01:00       13.509592        0.036944
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009668 meV/atom
+🎯 Mean force s.t.d. = 0.046508 eV/Å
+✅ Done.
+
+📂 Processing: init-031.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:01:06       13.547518        0.135445
+BFGS:    1 02:01:10       13.540693        0.117905
+BFGS:    2 02:01:14       13.517900        0.110409
+BFGS:    3 02:01:18       13.514598        0.096344
+BFGS:    4 02:01:22       13.511203        0.053303
+BFGS:    5 02:01:26       13.509763        0.032354
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.008366 meV/atom
+🎯 Mean force s.t.d. = 0.044127 eV/Å
+✅ Done.
+
+📂 Processing: init-032.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:01:31       13.548759        0.192621
+BFGS:    1 02:01:35       13.541756        0.153401
+BFGS:    2 02:01:40       13.517233        0.073078
+BFGS:    3 02:01:44       13.514341        0.079659
+BFGS:    4 02:01:48       13.511332        0.066603
+BFGS:    5 02:01:52       13.509764        0.046963
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.008865 meV/atom
+🎯 Mean force s.t.d. = 0.045304 eV/Å
+✅ Done.
+
+📂 Processing: init-033.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:01:57       13.548361        0.162765
+BFGS:    1 02:02:01       13.541270        0.123611
+BFGS:    2 02:02:05       13.518588        0.157154
+BFGS:    3 02:02:09       13.515036        0.122147
+BFGS:    4 02:02:14       13.511190        0.053413
+BFGS:    5 02:02:18       13.509836        0.039257
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.007248 meV/atom
+🎯 Mean force s.t.d. = 0.044440 eV/Å
+✅ Done.
+
+📂 Processing: init-034.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:02:23       13.548286        0.191880
+BFGS:    1 02:02:27       13.541258        0.135497
+BFGS:    2 02:02:31       13.517888        0.113986
+BFGS:    3 02:02:35       13.514542        0.102943
+BFGS:    4 02:02:39       13.511488        0.079546
+BFGS:    5 02:02:43       13.509848        0.044067
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.007397 meV/atom
+🎯 Mean force s.t.d. = 0.045608 eV/Å
+✅ Done.
+
+📂 Processing: init-035.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:02:49       13.547419        0.131372
+BFGS:    1 02:02:53       13.540762        0.117614
+BFGS:    2 02:02:57       13.517245        0.085399
+BFGS:    3 02:03:01       13.514284        0.064708
+BFGS:    4 02:03:05       13.511128        0.056956
+BFGS:    5 02:03:09       13.509578        0.038927
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009761 meV/atom
+🎯 Mean force s.t.d. = 0.044523 eV/Å
+✅ Done.
+
+📂 Processing: init-036.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:03:15       13.548375        0.155235
+BFGS:    1 02:03:19       13.541534        0.132525
+BFGS:    2 02:03:23       13.517290        0.077567
+BFGS:    3 02:03:27       13.514383        0.067857
+BFGS:    4 02:03:31       13.511134        0.058197
+BFGS:    5 02:03:35       13.509755        0.059979
+BFGS:    6 02:03:39       13.508797        0.067936
+BFGS:    7 02:03:43       14.681883        1.278293
+BFGS:    8 02:03:47       13.506638        0.069857
+BFGS:    9 02:03:51       13.506170        0.070108
+BFGS:   10 02:03:56       13.505498        0.062615
+BFGS:   11 02:04:00       13.505133        0.064867
+BFGS:   12 02:04:04       13.504240        0.086601
+BFGS:   13 02:04:08       13.503767        0.087113
+BFGS:   14 02:04:12       13.502378        0.093396
+BFGS:   15 02:04:16       13.501982        0.088460
+BFGS:   16 02:04:20       13.501127        0.091072
+BFGS:   17 02:04:24       13.500707        0.095037
+BFGS:   18 02:04:29       13.500102        0.099179
+BFGS:   19 02:04:33       13.499748        0.101398
+BFGS:   20 02:04:37       13.499191        0.097890
+BFGS:   21 02:04:41       13.498784        0.096448
+BFGS:   22 02:04:45       13.498219        0.093623
+BFGS:   23 02:04:49       13.497643        0.091945
+BFGS:   24 02:04:53       13.497118        0.093728
+BFGS:   25 02:04:57       13.496460        0.097067
+BFGS:   26 02:05:01       13.496099        0.093302
+BFGS:   27 02:05:05       13.495598        0.085531
+BFGS:   28 02:05:09       13.495247        0.071599
+BFGS:   29 02:05:13       13.494992        0.072476
+BFGS:   30 02:05:17       13.494753        0.070787
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.281250 eV
+📉 Energy s.t.d. = 6.046689 meV/atom
+🎯 Mean force s.t.d. = 0.066552 eV/Å
+✅ Done.
+
+📂 Processing: init-037.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:05:23       13.548597        0.254546
+BFGS:    1 02:05:27       13.541231        0.161577
+BFGS:    2 02:05:31       13.519473        0.206552
+BFGS:    3 02:05:35       13.515508        0.191724
+BFGS:    4 02:05:39       13.511487        0.083680
+BFGS:    5 02:05:44       13.510004        0.035367
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.006483 meV/atom
+🎯 Mean force s.t.d. = 0.045573 eV/Å
+✅ Done.
+
+📂 Processing: init-038.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:05:49       13.548986        0.285537
+BFGS:    1 02:05:53       13.541301        0.172797
+BFGS:    2 02:05:57       13.520915        0.232357
+BFGS:    3 02:06:01       13.516284        0.224978
+BFGS:    4 02:06:05       13.511439        0.102668
+BFGS:    5 02:06:10       13.510033        0.041576
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.005544 meV/atom
+🎯 Mean force s.t.d. = 0.046715 eV/Å
+✅ Done.
+
+📂 Processing: init-039.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:06:15       13.548820        0.277538
+BFGS:    1 02:06:19       13.541229        0.161589
+BFGS:    2 02:06:23       13.520490        0.218877
+BFGS:    3 02:06:27       13.516119        0.214872
+BFGS:    4 02:06:31       13.511642        0.118397
+BFGS:    5 02:06:35       13.510115        0.055161
+BFGS:    6 02:06:39       13.509120        0.044087
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.010587 meV/atom
+🎯 Mean force s.t.d. = 0.046545 eV/Å
+✅ Done.
+
+📂 Processing: init-040.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:06:45       13.548758        0.254173
+BFGS:    1 02:06:49       13.541323        0.168512
+BFGS:    2 02:06:53       13.520094        0.248565
+BFGS:    3 02:06:57       13.515863        0.212433
+BFGS:    4 02:07:01       13.511209        0.064650
+BFGS:    5 02:07:05       13.509992        0.049240
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.006157 meV/atom
+🎯 Mean force s.t.d. = 0.045348 eV/Å
+✅ Done.
+
+📂 Processing: init-041.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:07:11       13.546924        0.141164
+BFGS:    1 02:07:15       13.540280        0.126942
+BFGS:    2 02:07:19       13.516966        0.097471
+BFGS:    3 02:07:23       13.514334        0.089822
+BFGS:    4 02:07:27       13.510875        0.057035
+BFGS:    5 02:07:31       13.509524        0.053000
+BFGS:    6 02:07:35       13.507904        0.051737
+BFGS:    7 02:07:39       13.509489        0.081537
+BFGS:    8 02:07:43       13.506104        0.051732
+BFGS:    9 02:07:47       13.505132        0.043168
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.273438 eV
+📉 Energy s.t.d. = 6.010942 meV/atom
+🎯 Mean force s.t.d. = 0.055692 eV/Å
+✅ Done.
+
+📂 Processing: init-042.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:07:53       13.549139        0.224154
+BFGS:    1 02:07:57       13.541922        0.161814
+BFGS:    2 02:08:01       13.518326        0.134846
+BFGS:    3 02:08:05       13.514478        0.102040
+BFGS:    4 02:08:09       13.511292        0.056268
+BFGS:    5 02:08:13       13.509605        0.052195
+BFGS:    6 02:08:17       13.508268        0.049343
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.012800 meV/atom
+🎯 Mean force s.t.d. = 0.049274 eV/Å
+✅ Done.
+
+📂 Processing: init-043.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:08:23       13.548849        0.238805
+BFGS:    1 02:08:27       13.541468        0.168665
+BFGS:    2 02:08:31       13.519171        0.161954
+BFGS:    3 02:08:35       13.515257        0.144355
+BFGS:    4 02:08:39       13.511612        0.109700
+BFGS:    5 02:08:43       13.510040        0.053101
+BFGS:    6 02:08:47       13.509125        0.038779
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.011350 meV/atom
+🎯 Mean force s.t.d. = 0.046354 eV/Å
+✅ Done.
+
+📂 Processing: init-044.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:08:53       13.547844        0.135576
+BFGS:    1 02:08:57       13.541043        0.118505
+BFGS:    2 02:09:01       13.517458        0.102633
+BFGS:    3 02:09:05       13.514409        0.081269
+BFGS:    4 02:09:09       13.511114        0.051072
+BFGS:    5 02:09:13       13.509623        0.054584
+BFGS:    6 02:09:17       13.508275        0.050073
+BFGS:    7 02:09:21       13.528482        0.181622
+BFGS:    8 02:09:25       13.506615        0.053533
+BFGS:    9 02:09:30       13.506030        0.038659
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.012822 meV/atom
+🎯 Mean force s.t.d. = 0.053701 eV/Å
+✅ Done.
+
+📂 Processing: init-045.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:09:35       13.547415        0.132165
+BFGS:    1 02:09:39       13.540660        0.118386
+BFGS:    2 02:09:43       13.517525        0.096725
+BFGS:    3 02:09:47       13.514374        0.085244
+BFGS:    4 02:09:51       13.511099        0.055613
+BFGS:    5 02:09:55       13.509709        0.058656
+BFGS:    6 02:09:59       13.508507        0.050185
+BFGS:    7 02:10:03       13.604159        0.363517
+BFGS:    8 02:10:08       13.506775        0.057640
+BFGS:    9 02:10:12       13.506183        0.046107
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.013174 meV/atom
+🎯 Mean force s.t.d. = 0.053669 eV/Å
+✅ Done.
+
+📂 Processing: init-046.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:10:17       13.548414        0.157614
+BFGS:    1 02:10:21       13.541629        0.138730
+BFGS:    2 02:10:25       13.516870        0.067111
+BFGS:    3 02:10:29       13.514198        0.070116
+BFGS:    4 02:10:33       13.511049        0.059831
+BFGS:    5 02:10:37       13.509710        0.055364
+BFGS:    6 02:10:41       13.508497        0.046563
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.012924 meV/atom
+🎯 Mean force s.t.d. = 0.047644 eV/Å
+✅ Done.
+
+📂 Processing: init-047.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:10:47       13.547379        0.130495
+BFGS:    1 02:10:51       13.540682        0.116372
+BFGS:    2 02:10:55       13.517279        0.079475
+BFGS:    3 02:10:59       13.514189        0.075522
+BFGS:    4 02:11:03       13.511151        0.053503
+BFGS:    5 02:11:07       13.509748        0.044794
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009067 meV/atom
+🎯 Mean force s.t.d. = 0.044507 eV/Å
+✅ Done.
+
+📂 Processing: init-048.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:11:13       13.548360        0.150659
+BFGS:    1 02:11:17       13.541575        0.133236
+BFGS:    2 02:11:21       13.516928        0.069211
+BFGS:    3 02:11:25       13.514163        0.056240
+BFGS:    4 02:11:29       13.511052        0.048175
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 5.998959 meV/atom
+🎯 Mean force s.t.d. = 0.047183 eV/Å
+✅ Done.
+
+📂 Processing: init-049.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:11:34       13.547812        0.132716
+BFGS:    1 02:11:38       13.541101        0.120068
+BFGS:    2 02:11:42       13.517044        0.074124
+BFGS:    3 02:11:46       13.514224        0.058406
+BFGS:    4 02:11:51       13.510895        0.056981
+BFGS:    5 02:11:55       13.509666        0.033114
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009639 meV/atom
+🎯 Mean force s.t.d. = 0.045233 eV/Å
+✅ Done.
+
+📂 Processing: init-050.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:12:00       13.547707        0.137412
+BFGS:    1 02:12:04       13.541048        0.123668
+BFGS:    2 02:12:08       13.516790        0.070288
+BFGS:    3 02:12:12       13.514056        0.058803
+BFGS:    4 02:12:16       13.510922        0.054273
+BFGS:    5 02:12:20       13.509382        0.038890
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009982 meV/atom
+🎯 Mean force s.t.d. = 0.045999 eV/Å
+✅ Done.
+
+📂 Processing: init-051.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:12:26       13.547827        0.131618
+BFGS:    1 02:12:30       13.541130        0.118968
+BFGS:    2 02:12:34       13.516978        0.074890
+BFGS:    3 02:12:38       13.514229        0.059782
+BFGS:    4 02:12:42       13.510935        0.050646
+BFGS:    5 02:12:46       13.509624        0.034582
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009972 meV/atom
+🎯 Mean force s.t.d. = 0.045140 eV/Å
+✅ Done.
+
+📂 Processing: init-052.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:12:51       13.547693        0.136098
+BFGS:    1 02:12:55       13.541029        0.121801
+BFGS:    2 02:12:59       13.516821        0.070213
+BFGS:    3 02:13:03       13.514049        0.063045
+BFGS:    4 02:13:07       13.510922        0.061354
+BFGS:    5 02:13:12       13.509554        0.035456
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009544 meV/atom
+🎯 Mean force s.t.d. = 0.044295 eV/Å
+✅ Done.
+
+📂 Processing: init-053.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:13:17       13.548327        0.161089
+BFGS:    1 02:13:21       13.541319        0.116706
+BFGS:    2 02:13:25       13.518023        0.122414
+BFGS:    3 02:13:29       13.514872        0.117897
+BFGS:    4 02:13:33       13.511253        0.096424
+BFGS:    5 02:13:37       13.509821        0.070907
+BFGS:    6 02:13:41       13.508558        0.052745
+BFGS:    7 02:13:45       13.510458        0.163653
+BFGS:    8 02:13:50       13.506998        0.090651
+BFGS:    9 02:13:54       13.506190        0.054797
+BFGS:   10 02:13:58       13.505491        0.046844
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.273438 eV
+📉 Energy s.t.d. = 6.010325 meV/atom
+🎯 Mean force s.t.d. = 0.054368 eV/Å
+✅ Done.
+
+📂 Processing: init-054.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:14:03       13.548403        0.145133
+BFGS:    1 02:14:07       13.541440        0.122008
+BFGS:    2 02:14:11       13.518085        0.148728
+BFGS:    3 02:14:15       13.515317        0.139619
+BFGS:    4 02:14:19       13.510864        0.080450
+BFGS:    5 02:14:23       13.509603        0.066099
+BFGS:    6 02:14:28       13.508168        0.068858
+BFGS:    7 02:14:32       13.507553        0.097387
+BFGS:    8 02:14:36       13.506399        0.076050
+BFGS:    9 02:14:40       13.504984        0.069587
+BFGS:   10 02:14:44       13.503802        0.043130
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.273438 eV
+📉 Energy s.t.d. = 6.009053 meV/atom
+🎯 Mean force s.t.d. = 0.059992 eV/Å
+✅ Done.
+
+📂 Processing: init-055.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:14:49       13.548099        0.132231
+BFGS:    1 02:14:53       13.541318        0.118065
+BFGS:    2 02:14:57       13.517291        0.097064
+BFGS:    3 02:15:01       13.514374        0.072576
+BFGS:    4 02:15:06       13.510945        0.056503
+BFGS:    5 02:15:10       13.509573        0.035251
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009548 meV/atom
+🎯 Mean force s.t.d. = 0.044803 eV/Å
+✅ Done.
+
+📂 Processing: init-056.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:15:15       13.547705        0.132613
+BFGS:    1 02:15:19       13.540972        0.118197
+BFGS:    2 02:15:23       13.516881        0.070356
+BFGS:    3 02:15:27       13.514135        0.064598
+BFGS:    4 02:15:31       13.510992        0.059690
+BFGS:    5 02:15:35       13.509642        0.041746
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.008843 meV/atom
+🎯 Mean force s.t.d. = 0.044651 eV/Å
+✅ Done.
+
+📂 Processing: init-057.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:15:41       13.548569        0.179234
+BFGS:    1 02:15:45       13.541539        0.131884
+BFGS:    2 02:15:49       13.517756        0.092731
+BFGS:    3 02:15:53       13.514633        0.102484
+BFGS:    4 02:15:57       13.511355        0.077350
+BFGS:    5 02:16:01       13.509844        0.041296
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.008562 meV/atom
+🎯 Mean force s.t.d. = 0.044705 eV/Å
+✅ Done.
+
+📂 Processing: init-058.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:16:06       13.547661        0.136982
+BFGS:    1 02:16:10       13.540888        0.120932
+BFGS:    2 02:16:15       13.517431        0.111918
+BFGS:    3 02:16:19       13.514303        0.080680
+BFGS:    4 02:16:23       13.511126        0.056508
+BFGS:    5 02:16:27       13.509666        0.046326
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.008836 meV/atom
+🎯 Mean force s.t.d. = 0.045351 eV/Å
+✅ Done.
+
+📂 Processing: init-059.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:16:32       13.547495        0.130977
+BFGS:    1 02:16:36       13.540854        0.116970
+BFGS:    2 02:16:40       13.516870        0.072854
+BFGS:    3 02:16:44       13.514078        0.068627
+BFGS:    4 02:16:48       13.510736        0.060767
+BFGS:    5 02:16:52       13.509503        0.036585
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009312 meV/atom
+🎯 Mean force s.t.d. = 0.045083 eV/Å
+✅ Done.
+
+📂 Processing: init-060.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:16:58       13.547862        0.143449
+BFGS:    1 02:17:02       13.541193        0.126418
+BFGS:    2 02:17:06       13.516980        0.069883
+BFGS:    3 02:17:10       13.514125        0.057376
+BFGS:    4 02:17:14       13.511065        0.048209
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.000053 meV/atom
+🎯 Mean force s.t.d. = 0.046168 eV/Å
+✅ Done.
+
+📂 Processing: init-061.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:17:20       13.548078        0.130310
+BFGS:    1 02:17:24       13.541324        0.116377
+BFGS:    2 02:17:28       13.517151        0.085044
+BFGS:    3 02:17:32       13.514229        0.064300
+BFGS:    4 02:17:36       13.511030        0.053312
+BFGS:    5 02:17:40       13.509682        0.035983
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009650 meV/atom
+🎯 Mean force s.t.d. = 0.044436 eV/Å
+✅ Done.
+
+📂 Processing: init-062.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:17:45       13.547734        0.138533
+BFGS:    1 02:17:49       13.540970        0.117380
+BFGS:    2 02:17:53       13.517102        0.076104
+BFGS:    3 02:17:57       13.514302        0.072574
+BFGS:    4 02:18:01       13.511185        0.055753
+BFGS:    5 02:18:05       13.509671        0.043166
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009303 meV/atom
+🎯 Mean force s.t.d. = 0.044644 eV/Å
+✅ Done.
+
+📂 Processing: init-063.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:18:11       13.548014        0.149878
+BFGS:    1 02:18:15       13.541092        0.120847
+BFGS:    2 02:18:19       13.518209        0.141355
+BFGS:    3 02:18:23       13.514748        0.106223
+BFGS:    4 02:18:27       13.511334        0.057745
+BFGS:    5 02:18:31       13.509848        0.043965
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.008057 meV/atom
+🎯 Mean force s.t.d. = 0.044711 eV/Å
+✅ Done.
+
+📂 Processing: init-064.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:18:37       13.548668        0.208814
+BFGS:    1 02:18:41       13.541399        0.140528
+BFGS:    2 02:18:45       13.518663        0.116095
+BFGS:    3 02:18:49       13.514992        0.132111
+BFGS:    4 02:18:53       13.511670        0.101550
+BFGS:    5 02:18:57       13.509932        0.057821
+BFGS:    6 02:19:01       13.508878        0.042146
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.011788 meV/atom
+🎯 Mean force s.t.d. = 0.047716 eV/Å
+✅ Done.
+
+📂 Processing: init-065.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:19:06       13.548175        0.129342
+BFGS:    1 02:19:10       13.541460        0.115383
+BFGS:    2 02:19:15       13.516884        0.075921
+BFGS:    3 02:19:19       13.514130        0.063295
+BFGS:    4 02:19:23       13.510933        0.056303
+BFGS:    5 02:19:27       13.509618        0.032583
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009549 meV/atom
+🎯 Mean force s.t.d. = 0.044777 eV/Å
+✅ Done.
+
+📂 Processing: init-066.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:19:32       13.547564        0.143252
+BFGS:    1 02:19:36       13.540822        0.122513
+BFGS:    2 02:19:40       13.517293        0.070540
+BFGS:    3 02:19:44       13.514417        0.061193
+BFGS:    4 02:19:48       13.511088        0.050958
+BFGS:    5 02:19:53       13.509756        0.048128
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009568 meV/atom
+🎯 Mean force s.t.d. = 0.044764 eV/Å
+✅ Done.
+
+📂 Processing: init-067.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:19:58       13.548880        0.235619
+BFGS:    1 02:20:02       13.541466        0.157245
+BFGS:    2 02:20:06       13.519484        0.161232
+BFGS:    3 02:20:10       13.515314        0.133478
+BFGS:    4 02:20:14       13.511790        0.102819
+BFGS:    5 02:20:18       13.510158        0.058932
+BFGS:    6 02:20:22       13.509048        0.039344
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.011449 meV/atom
+🎯 Mean force s.t.d. = 0.047965 eV/Å
+✅ Done.
+
+📂 Processing: init-068.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:20:28       13.547801        0.134904
+BFGS:    1 02:20:32       13.541003        0.117098
+BFGS:    2 02:20:36       13.517436        0.091324
+BFGS:    3 02:20:40       13.514442        0.085579
+BFGS:    4 02:20:44       13.511154        0.055734
+BFGS:    5 02:20:48       13.509615        0.041884
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.008847 meV/atom
+🎯 Mean force s.t.d. = 0.044956 eV/Å
+✅ Done.
+
+📂 Processing: init-069.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:20:54       13.548929        0.219144
+BFGS:    1 02:20:58       13.541723        0.156945
+BFGS:    2 02:21:02       13.518527        0.106671
+BFGS:    3 02:21:06       13.514768        0.099952
+BFGS:    4 02:21:10       13.511505        0.083864
+BFGS:    5 02:21:14       13.509958        0.051712
+BFGS:    6 02:21:18       13.508942        0.038920
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.011816 meV/atom
+🎯 Mean force s.t.d. = 0.047249 eV/Å
+✅ Done.
+
+📂 Processing: init-070.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:21:24       13.547322        0.132065
+BFGS:    1 02:21:28       13.540688        0.117169
+BFGS:    2 02:21:32       13.516951        0.066639
+BFGS:    3 02:21:36       13.514265        0.065175
+BFGS:    4 02:21:40       13.511114        0.056037
+BFGS:    5 02:21:44       13.509685        0.042860
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.269531 eV
+📉 Energy s.t.d. = 6.009838 meV/atom
+🎯 Mean force s.t.d. = 0.045087 eV/Å
+✅ Done.
+
+📂 Processing: init-071.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:21:50       13.548485        0.167818
+BFGS:    1 02:21:54       13.541609        0.131816
+BFGS:    2 02:21:58       13.517446        0.072250
+BFGS:    3 02:22:02       13.514363        0.071577
+BFGS:    4 02:22:06       13.511309        0.055143
+BFGS:    5 02:22:10       13.509768        0.039780
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.265625 eV
+📉 Energy s.t.d. = 6.008465 meV/atom
+🎯 Mean force s.t.d. = 0.044446 eV/Å
+✅ Done.
+
+📂 Processing: init-072.traj
+      Step     Time          Energy          fmax
+BFGS:    0 02:22:15       13.547236        0.131172
+BFGS:    1 02:22:19       13.540645        0.117422
+BFGS:    2 02:22:23       13.517036        0.092664
+BFGS:    3 02:22:27       13.514330        0.087348
+BFGS:    4 02:22:32       13.510684        0.059085
+BFGS:    5 02:22:35       13.509631        0.063384
+BFGS:    6 02:22:39       13.508553        0.062473
+BFGS:    7 02:22:43       14.805751        1.100805
+BFGS:    8 02:22:47       13.506734        0.077768
+BFGS:    9 02:22:51       13.505727        0.073401
+BFGS:   10 02:22:55       13.504988        0.068771
+BFGS:   11 02:22:59       13.504417        0.057703
+BFGS:   12 02:23:03       13.503668        0.062659
+BFGS:   13 02:23:07       13.503019        0.054821
+BFGS:   14 02:23:11       13.502432        0.043631
+🧪 Formula: Ca8Mg16O56Si16
+⚡ Raw energy = -54199.273438 eV
+📉 Energy s.t.d. = 6.013256 meV/atom
+🎯 Mean force s.t.d. = 0.060443 eV/Å
+✅ Done.
+
+        _
+  _ __ | |__   ___  _ __   ___   _ __  _   _
+ | '_ \| '_ \ / _ \| '_ \ / _ \ | '_ \| | | |
+ | |_) | | | | (_) | | | | (_) || |_) | |_| |
+ | .__/|_| |_|\___/|_| |_|\___(_) .__/ \__, |
+ |_|                            |_|    |___/
+                                      2.38.1
+
+-------------------------[time 2025-04-22 02:23:17]-------------------------
+Compiled with OpenMP support (max 1 threads).
+Python version 3.13.3
+Spglib version 2.6.0
+
+Calculator interface: qe
+Crystal structure was read from "pw.in".
+Unit of length: au
+Mesh sampling mode
+Settings:
+  Sampling mesh: [20 20 20]
+  Supercell: [2 2 2]
+Spacegroup: P1 (1)
+Number of symmetry operations in supercell: 8
+Use -v option to watch primitive cell, unit cell, and supercell structures.
+
+Forces and displacements were read from "FORCE_SETS".
+Force constants solver of phonopy-traditional is used.
+Max drift of force constants: 1.212347 (xz) -0.000000 (yx)
+
+****************************************************************************
+ The "phonopy" command for running phonon calculationswill be phased out in 
+ the future. It is recommended to use the "phonopy-load" command instead.
+ For more details, please refer to this link.
+ https://phonopy.github.io/phonopy/phonopy-load.html
+****************************************************************************
+Mesh numbers: [20 20 20]
+Number of irreducible q-points on sampling mesh: 4000/8000
+Calculating phonons on sampling mesh...
+Calculating thermal properties...
+Cutoff frequency: 0.00000
+Number of phonon frequencies less than cutoff frequency: 170378/288000
+#      T [K]      F [kJ/mol]    S [J/K/mol]  C_v [J/K/mol]     E [kJ/mol]
+       0.000      19.8158998      0.0000000      0.0000000     19.8158998
+      10.000      19.8140831      0.5583854      1.1607797     19.8196670
+      20.000      19.8006619      2.3233599      4.6924362     19.8471291
+      30.000      19.7638832      5.2083033     10.2031612     19.9201323
+      40.000      19.6932262      9.0726482     17.1908976     20.0561321
+      50.000      19.5797527     13.7396158     25.0154159     20.2667335
+      60.000      19.4164120     19.0135203     33.0804105     20.5572232
+      70.000      19.1980829     24.7082094     40.9461414     20.9276576
+      80.000      18.9213779     30.6650034     48.3460969     21.3745782
+      90.000      18.5843311     36.7583717     55.1505210     21.8925845
+     100.000      18.1860727     42.8939276     61.3197057     22.4754655
+     110.000      17.7265422     49.0032556     66.8662502     23.1169003
+     120.000      17.2062571     55.0382384     71.8297245     23.8108457
+     130.000      16.6261359     60.9660438     76.2613272     24.5517216
+     140.000      15.9873663     66.7650990     80.2152373     25.3344802
+     150.000      15.2913084     72.4220095     83.7440561     26.1546098
+     160.000      14.5394254     77.9292636     86.8966153     27.0081076
+     170.000      13.7332334     83.2835435     89.7171049     27.8914358
+     180.000      12.8742659     88.4844928     92.2449084     28.8014746
+     190.000      11.9640491     93.5338191     94.5147993     29.7354747
+     200.000      11.0040846     98.4346422     96.5573069     30.6910131
+     210.000       9.9958378    103.1910216     98.3991455     31.6659523
+     220.000       8.9407302    107.8076137    100.0636494     32.6584052
+     230.000       7.8401348    112.2894243    101.5711864     33.6667024
+     240.000       6.6953737    116.6416312    102.9395362     34.6893652
+     250.000       5.5077168    120.8694574    104.1842283     35.7250811
+     260.000       4.2783819    124.9780813    105.3188407     36.7726830
+     270.000       3.0085356    128.9725749    106.3552604     37.8311308
+     280.000       1.6992944    132.8578622    107.3039096     38.8994958
+     290.000       0.3517265    136.6386916    108.1739414     39.9769471
+     300.000      -1.0331465    140.3196199    108.9734089     41.0627395
+     310.000      -2.4543474    143.9050039    109.7094102     42.1562038
+     320.000      -3.9109419    147.3989971    110.3882140     43.2567372
+     330.000      -5.4020359    150.8055512    111.0153670     44.3637960
+     340.000      -6.9267740    154.1284200    111.5957866     45.4768888
+     350.000      -8.4843373    157.3711652    112.1338412     46.5955705
+     360.000     -10.0739415    160.5371636    112.6334189     47.7194374
+     370.000     -11.6948354    163.6296153    113.0979870     48.8481223
+     380.000     -13.3462988    166.6515515    113.5306435     49.9812908
+     390.000     -15.0276410    169.6058436    113.9341619     51.1186380
+     400.000     -16.7381993    172.4952112    114.3110294     52.2598852
+     410.000     -18.4773374    175.3222308    114.6634809     53.4047773
+     420.000     -20.2444442    178.0893438    114.9935281     54.5530802
+     430.000     -22.0389323    180.7988640    115.3029849     55.7045792
+     440.000     -23.8602368    183.4529854    115.5934898     56.8590767
+     450.000     -25.7078143    186.0537891    115.8665253     58.0163908
+     460.000     -27.5811415    188.6032499    116.1234348     59.1763535
+     470.000     -29.4797144    191.1032430    116.3654380     60.3388098
+     480.000     -31.4030474    193.5555493    116.5936435     61.5036163
+     490.000     -33.3506721    195.9618615    116.8090611     62.6706401
+     500.000     -35.3221367    198.3237893    117.0126112     63.8397579
+     510.000     -37.3170050    200.6428639    117.2051348     65.0108555
+     520.000     -39.3348560    202.9205431    117.3874007     66.1838265
+     530.000     -41.3752826    205.1582156    117.5601130     67.3585717
+     540.000     -43.4378914    207.3572044    117.7239176     68.5349990
+     550.000     -45.5223019    209.5187714    117.8794074     69.7130223
+     560.000     -47.6281461    211.6441203    118.0271274     70.8925613
+     570.000     -49.7550674    213.7344002    118.1675797     72.0735407
+     580.000     -51.9027208    215.7907087    118.3012267     73.2558902
+     590.000     -54.0707719    217.8140946    118.4284952     74.4395439
+     600.000     -56.2588963    219.8055608    118.5497797     75.6244402
+     610.000     -58.4667799    221.7660667    118.6654448     76.8105208
+     620.000     -60.6941175    223.6965306    118.7758281     77.9977314
+     630.000     -62.9406133    225.5978319    118.8812428     79.1860208
+     640.000     -65.2059798    227.4708133    118.9819791     80.3753407
+     650.000     -67.4899379    229.3162824    119.0783069     81.5656457
+     660.000     -69.7922163    231.1350141    119.1704770     82.7568930
+     670.000     -72.1125515    232.9277517    119.2587227     83.9490422
+     680.000     -74.4506871    234.6952091    119.3432615     85.1420551
+     690.000     -76.8063737    236.4380716    119.4242960     86.3358957
+     700.000     -79.1793687    238.1569981    119.5020155     87.5305300
+     710.000     -81.5694360    239.8526219    119.5765968     88.7259256
+     720.000     -83.9763455    241.5255521    119.6482048     89.9220520
+     730.000     -86.3998733    243.1763748    119.7169944     91.1188803
+     740.000     -88.8398012    244.8056543    119.7831100     92.3163830
+     750.000     -91.2959164    246.4139339    119.8466876     93.5145340
+     760.000     -93.7680116    248.0017372    119.9078541     94.7133087
+     770.000     -96.2558846    249.5695689    119.9667291     95.9126835
+     780.000     -98.7593381    251.1179155    120.0234247     97.1126360
+     790.000    -101.2781795    252.6472463    120.0780464     98.3131450
+     800.000    -103.8122211    254.1580143    120.1306934     99.5141903
+     810.000    -106.3612794    255.6506568    120.1814589    100.7157526
+     820.000    -108.9251752    257.1255961    120.2304311    101.9178135
+     830.000    -111.5037337    258.5832400    120.2776927    103.1203556
+     840.000    -114.0967837    260.0239829    120.3233221    104.3233620
+     850.000    -116.7041583    261.4482060    120.3673930    105.5268168
+     860.000    -119.3256940    262.8562777    120.4099751    106.7307049
+     870.000    -121.9612312    264.2485549    120.4511343    107.9350116
+     880.000    -124.6106136    265.6253825    120.4909330    109.1397230
+     890.000    -127.2736884    266.9870947    120.5294301    110.3448259
+     900.000    -129.9503062    268.3340151    120.5666814    111.5503075
+     910.000    -132.6403205    269.6664572    120.6027397    112.7561555
+     920.000    -135.3435881    270.9847245    120.6376553    113.9623584
+     930.000    -138.0599687    272.2891115    120.6714755    115.1689050
+     940.000    -140.7893250    273.5799037    120.7042456    116.3757845
+     950.000    -143.5315224    274.8573778    120.7360083    117.5829865
+     960.000    -146.2864290    276.1218025    120.7668042    118.7905014
+     970.000    -149.0539158    277.3734385    120.7966720    119.9983195
+     980.000    -151.8338560    278.6125387    120.8256485    121.2064319
+     990.000    -154.6261256    279.8393487    120.8537686    122.4148297
+    1000.000    -157.4306028    281.0541073    120.8810655    123.6235045
+    1010.000    -160.2471684    282.2570462    120.9075709    124.8324483
+    1020.000    -163.0757051    283.4483907    120.9333150    126.0416534
+    1030.000    -165.9160982    284.6283596    120.9583265    127.2511122
+    1040.000    -168.7682351    285.7971660    120.9826329    128.4608176
+    1050.000    -171.6320051    286.9550168    121.0062602    129.6707626
+    1060.000    -174.5072996    288.1021134    121.0292335    130.8809406
+    1070.000    -177.3940121    289.2386517    121.0515766    132.0913451
+    1080.000    -180.2920381    290.3648224    121.0733121    133.3019701
+    1090.000    -183.2012746    291.4808111    121.0944619    134.5128094
+    1100.000    -186.1216209    292.5867985    121.1150467    135.7238574
+    1110.000    -189.0529779    293.6829607    121.1350864    136.9351086
+    1120.000    -191.9952480    294.7694691    121.1546000    138.1465574
+    1130.000    -194.9483356    295.8464907    121.1736057    139.3581989
+    1140.000    -197.9121467    296.9141882    121.1921208    140.5700279
+    1150.000    -200.8865888    297.9727205    121.2101621    141.7820397
+    1160.000    -203.8715711    299.0222420    121.2277456    142.9942296
+    1170.000    -206.8670041    300.0629036    121.2448865    144.2065931
+    1180.000    -209.8728001    301.0948526    121.2615995    145.4191259
+    1190.000    -212.8888726    302.1182322    121.2778988    146.6318237
+    1200.000    -215.9151367    303.1331827    121.2937977    147.8446826
+    1210.000    -218.9515086    304.1398405    121.3093093    149.0576984
+    1220.000    -221.9979063    305.1383392    121.3244459    150.2708675
+    1230.000    -225.0542487    306.1288088    121.3392197    151.4841861
+    1240.000    -228.1204561    307.1113765    121.3536419    152.6976507
+    1250.000    -231.1964503    308.0861665    121.3677237    153.9112578
+    1260.000    -234.2821539    309.0533000    121.3814757    155.1250041
+    1270.000    -237.3774911    310.0128956    121.3949080    156.3388863
+    1280.000    -240.4823871    310.9650690    121.4080304    157.5529012
+    1290.000    -243.5967681    311.9099334    121.4208524    158.7670459
+    1300.000    -246.7205618    312.8475993    121.4333831    159.9813173
+    1310.000    -249.8536965    313.7781749    121.4456311    161.1957126
+    1320.000    -252.9961020    314.7017659    121.4576049    162.4102290
+    1330.000    -256.1477089    315.6184757    121.4693126    163.6248638
+    1340.000    -259.3084489    316.5284054    121.4807621    164.8396144
+    1350.000    -262.4782547    317.4316540    121.4919607    166.0544782
+    1360.000    -265.6570600    318.3283182    121.5029159    167.2694528
+    1370.000    -268.8447995    319.2184928    121.5136345    168.4845357
+    1380.000    -272.0414086    320.1022705    121.5241233    169.6997247
+    1390.000    -275.2468238    320.9797419    121.5343888    170.9150175
+    1400.000    -278.4609827    321.8509960    121.5444373    172.1304118
+    1410.000    -281.6838233    322.7161197    121.5542749    173.3459055
+    1420.000    -284.9152849    323.5751982    121.5639074    174.5614966
+    1430.000    -288.1553074    324.4283150    121.5733404    175.7771830
+    1440.000    -291.4038316    325.2755516    121.5825794    176.9929627
+    1450.000    -294.6607991    326.1169883    121.5916298    178.2088339
+    1460.000    -297.9261523    326.9527035    121.6004964    179.4247947
+    1470.000    -301.1998344    327.7827739    121.6091844    180.6408433
+    1480.000    -304.4817892    328.6072750    121.6176985    181.8569778
+    1490.000    -307.7719616    329.4262807    121.6260432    183.0731967
+    1500.000    -311.0702968    330.2398633    121.6342230    184.2894981
+
+Summary of calculation was written in "phonopy.yaml".
+-------------------------[time 2025-04-22 02:23:21]-------------------------
+                 _
+   ___ _ __   __| |
+  / _ \ '_ \ / _` |
+ |  __/ | | | (_| |
+  \___|_| |_|\__,_|
+
