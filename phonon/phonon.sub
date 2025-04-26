@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#SBATCH -N  1
+#SBATCH --tasks-per-node=2
+#SBATCH --gres=gpu:1
+#SBATCH -t 5-00:00:00
+#SBATCH -J phonon
+#SBATCH -o out.%j
+#SBATCH -e err.%j
+#SBATCH --mail-user=yingjies9898@gmail.com
+#SBATCH --mem=5G
+#SBATCH --mail-type=NONE
+#SBATCH -p g_rrig
+
+cd $SLURM_SUBMIT_DIR
+export OMP_NUM_THREADS=1
+module purge
+module load gpu/nvidia_sdk/20.9
+
+source /home/yingjies/anaconda3/bin/activate nff
+python /scratch/alevoj1/YingjieS/DQX/scripts/relax_bulk.py
+python /scratch/alevoj1/YingjieS/DQX/phonon/cleanup.py
+conda deactivate
+
+source /home/yingjies/anaconda3/bin/activate phonopy
+phonopy --qe -c pw.in -d --dim 2 2 2 --pa auto
+python /scratch/alevoj1/YingjieS/DQX/phonon/qe_traj.py
+conda deactivate
+
+source /home/yingjies/anaconda3/bin/activate vssr-mc
+python /scratch/alevoj1/YingjieS/DQX/phonon/painn_opt.py
+python /scratch/alevoj1/YingjieS/DQX/phonon/get_force_sets.py
+conda deactivate
+
+source /home/yingjies/anaconda3/bin/activate phonopy
+phonopy --qe -c pw.in --dim="2 2 2" --mesh="20 20 20" --tmax=1500 --tstep=10 -t -p
+conda deactivate
