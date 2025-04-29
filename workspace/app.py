@@ -171,14 +171,10 @@ if 'boltzmann_prob' in df.columns:
         y=alt.Y('boltzmann_prob', title='Boltzmann Probability'),  # Y is boltzmann_prob
         tooltip=['formula', 'boltzmann_prob']  # Tooltip to display both formula and probability
     ).properties(
-        title='Top Structures by Boltzmann Probability'
-    )
-
-    # Configure chart appearance
-    chart = chart.configure_axis(
+        title='Top Structures by Boltzmann Probability',
+        width=600  # Set width directly in properties
+    ).configure_axis(
         labelAngle=0  # Rotate labels to horizontal
-    ).configure_view(
-        width=500  # Set fixed width for clarity
     )
 
     # Display the chart
