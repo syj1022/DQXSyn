@@ -203,7 +203,7 @@ if 'boltzmann_prob' in df.columns:
     
     st.altair_chart(chart, use_container_width=True)
     
-    st.subheader("Detailed Data")
+    st.subheader("Summary Table")
     st.dataframe(
         df_top[['formula', 'boltzmann_prob', 'formation_energy', 'gibbs_formation_energy']].rename(columns={
             'boltzmann_prob': 'Probability',
@@ -237,7 +237,7 @@ if 'boltzmann_prob' in df.columns:
     df_top['structure_path'] = df_top['filename'].apply(make_structure_path)
 
     # Display detailed data with structures
-    st.subheader("Detailed Data with Structures")
+    st.subheader("Visualized Structures")
 
     # Loop through the top 30 rows
     for idx in range(len(df_top)):
