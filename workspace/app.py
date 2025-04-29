@@ -139,6 +139,7 @@ def load_sorted_data(T, molar_ratios):
 st.title("🔬 Mg-Ca-Si-O")
 
 T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
+
 col1, col2 = st.columns(2)
 with col1:
     CaO = st.slider("CaO molar ratio", 0.01, 10.0, 1.0, step=0.1)
@@ -147,29 +148,42 @@ with col2:
     SiO2 = st.slider("SiO₂ molar ratio", 0.01, 10.0, 1.0, step=0.1)
     O2 = st.slider("O₂ molar ratio", 0.01, 50.0, 1.0, step=0.1)
 
+# Load sorted data from the load_sorted_data function
 sorted_data = load_sorted_data(T, {
     'CaO': CaO, 'MgO': MgO, 'SiO2': SiO2, 'O2': O2
 })
 
-df = pd.DataFrame(top_structures)
-df_sorted = df.sort_values('boltzmann_prob', ascending=False)
+# Create a DataFrame from the sorted data
+df = pd.DataFrame(sorted_data)
 
-top_n = 30
-df_top = df_sorted.head(top_n)
+# Check if the DataFrame contains the required 'boltzmann_prob' column
+if 'boltzmann_prob' in df.columns:
+    # Sort the data by 'boltzmann_prob' in descending order
+    df_sorted = df.sort_values('boltzmann_prob', ascending=False)
 
-chart = alt.Chart(df_top).mark_bar().encode(
-    x=alt.X('formula', sort=None, title='Formula'),  # X is now formula, not Boltzmann prob
-    y=alt.Y('boltzmann_prob', title='Boltzmann Probability'),  # Y is Boltzmann prob
-    tooltip=['formula', 'boltzmann_prob']  # Tooltip to display both formula and probability
-).properties(
-    title='Top Structures by Boltzmann Probability'
-)
+    # Select top N entries
+    top_n = 30
+    df_top = df_sorted.head(top_n)
 
-chart = chart.configure_axis(
-    labelAngle=0  # Rotate labels to horizontal
-).configure_view(
-    width=500  # Fix the width of the chart for better clarity
-)
+    # Create the Altair chart
+    chart = alt.Chart(df_top).mark_bar().encode(
+        x=alt.X('formula', sort=None, title='Formula'),  # X is now formula
+        y=alt.Y('boltzmann_prob', title='Boltzmann Probability'),  # Y is boltzmann_prob
+        tooltip=['formula', 'boltzmann_prob']  # Tooltip to display both formula and probability
+    ).properties(
+        title='Top Structures by Boltzmann Probability'
+    )
 
-st.altair_chart(chart, use_container_width=True)
+    # Configure chart appearance
+    chart = chart.configure_axis(
+        labelAngle=0  # Rotate labels to horizontal
+    ).configure_view(
+        width=500  # Set fixed width for clarity
+    )
+
+    # Display the chart
+    st.altair_chart(chart, use_container_width=True)
+else:
+    st.error("Error: 'boltzmann_prob' column not found in the data.")
+
 
