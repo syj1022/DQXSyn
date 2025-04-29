@@ -220,29 +220,40 @@ if 'boltzmann_prob' in df.columns:
 
 # [Previous imports remain the same]
 
+
 if 'boltzmann_prob' in df.columns:
     df_top = df.head(30).copy()
     df_top['index'] = range(len(df_top))
 
-    # Add structure path column - points directly to filename in stable directory
-    df_top['structure_path'] = df_top['filename'].apply(
-        lambda x: os.path.join('workspace', 'stable', 'generated', x)
-    )
+    # Create structure_path only if filename exists and is valid
+    def make_structure_path(filename):
+        if isinstance(filename, str) and filename.strip():
+            return os.path.join('workspace', 'stable', 'generated', filename)
+        else:
+            return None
+
+    if 'filename' in df_top.columns:
+        df_top['structure_path'] = df_top['filename'].apply(make_structure_path)
+    else:
+        df_top['structure_path'] = None
 
     st.subheader("Detailed Data with Structures")
 
     for idx, row in df_top.iterrows():
-        with st.expander(f"{row.get('formula', 'Unknown')} - Probability: {row.get('boltzmann_prob', 0):.2%}"):
+        formula = row.get('formula', 'Unknown')
+        prob = row.get('boltzmann_prob', 0)
+
+        with st.expander(f"{formula} - Probability: {prob:.2%}"):
             col1, col2 = st.columns([1, 2])
 
             with col1:
                 st.write(f"**Formation Energy:** {row.get('formation_energy', float('nan')):.3f} eV/atom")
                 st.write(f"**Gibbs Free Energy:** {row.get('gibbs_formation_energy', float('nan')):.3f} eV/atom")
-                st.write(f"**Probability:** {row.get('boltzmann_prob', 0):.2%}")
+                st.write(f"**Probability:** {prob:.2%}")
                 st.write(f"**Filename:** {row.get('filename', 'N/A')}")
 
             with col2:
-                structure_path = row.get('structure_path')  # Using .get() is safer
+                structure_path = row.get('structure_path')
                 if structure_path and os.path.exists(structure_path):
                     try:
                         atoms = read(structure_path)
@@ -266,7 +277,7 @@ if 'boltzmann_prob' in df.columns:
                             st.warning("3D viewer not available. Install it with: pip install py3Dmol")
                             st.code(atoms)
                     except Exception as e:
-                        st.error(f"Error reading structure file: {str(e)}")
+                        st.error(f"Error reading structure: {str(e)}")
                         st.write(f"Attempted path: {structure_path}")
                 else:
                     st.warning(f"Structure file not found at: {structure_path}")
@@ -274,3 +285,4 @@ if 'boltzmann_prob' in df.columns:
                     if dir_path and os.path.exists(dir_path):
                         st.write("Directory contents:")
                         st.code(os.listdir(dir_path))
+
