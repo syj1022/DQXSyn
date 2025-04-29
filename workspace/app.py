@@ -159,19 +159,17 @@ if 'boltzmann_prob' in df.columns:
 
     top_n = 30
     df_top = df_sorted.head(top_n)
-
+    print(len(df_top))
     if len(df_top) < top_n:
         st.warning(f"Only {len(df_top)} structures available, displaying all.")
 
-    chart = alt.Chart(df_top).mark_bar(size=20).encode(
+    chart = alt.Chart(df_top).mark_bar().encode(
         x=alt.X('formula', sort='-y', title='Formula'),
         y=alt.Y('boltzmann_prob', title='Boltzmann Probability'),
         tooltip=['formula', 'boltzmann_prob']
     ).properties(
-        #title='Top Structures by Boltzmann Probability',
+        title='Top Structures by Boltzmann Probability',
         width=600
     ).configure_axis()
-
-    st.altair_chart(chart, use_container_width=True)
 
     st.altair_chart(chart, use_container_width=True)
