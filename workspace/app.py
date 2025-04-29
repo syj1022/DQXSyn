@@ -176,14 +176,15 @@ if 'boltzmann_prob' in df.columns:
     
     # Create the base chart
     base = alt.Chart(df_top).encode(
-        x=alt.X('index:O', axis=alt.Axis(title='Generated Structure Index', labels=False, ticks=False),
+        x=alt.X('index:O', 
+                axis=alt.Axis(title='Generated Structure Index', labels=False, ticks=False)),
         tooltip=['formula', 'boltzmann_prob:Q', 'formation_energy:Q', 'gibbs_formation_energy:Q']
     )
     
     # Create bars
     bars = base.mark_bar().encode(
         y=alt.Y('boltzmann_prob:Q', title='Boltzmann Probability'),
-        color=alt.Color('boltzmann_prob:Q', legend=None, scale=alt.Scale(scheme='blues'))
+        color=alt.Color('boltzmann_prob:Q', legend=None, scale=alt.Scale(scheme='blues')))
     
     # Create text labels with rotation
     text = base.mark_text(
