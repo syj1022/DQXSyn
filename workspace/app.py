@@ -4,6 +4,7 @@ import tempfile
 import altair as alt
 import numpy as np
 import pandas as pd
+import logging
 from collections import defaultdict
 import streamlit as st
 from ase.io import read
@@ -49,11 +50,7 @@ def get_O_G_corr(T):
 
     return thermo_h2o.get_gibbs_energy(T, 101325, verbose=False) - thermo_h2.get_gibbs_energy(T, 101325, verbose=False) + 2.46 + 460.8683
 
-import re
-import os
-import logging
 
-# Set up logging to a file
 logging.basicConfig(filename='shear_strength_debug.log', level=logging.DEBUG)
 
 def load_shear_strength_for_structure(directory):
@@ -61,23 +58,19 @@ def load_shear_strength_for_structure(directory):
     if os.path.exists(shear_strength_file):
         try:
             with open(shear_strength_file, 'r') as f:
-                # Read the first line of the file
                 line = f.readline().strip()
-                st.text(f"Raw line: '{line}'")  # Using st.text instead of logging
+                st.text(f"Raw line: '{line}'")
 
-                # Use regex to extract the GPa value from the string
                 match = re.search(r'\(([\d\.]+)\s*GPa\)', line)
                 if match:
-                    # Extract the GPa value as a float
                     shear_strength_gpa = float(match.group(1))
-                    st.text(f"Extracted shear strength (GPa): {shear_strength_gpa}")  # Using st.text instead of logging
+                    st.text(f"Extracted shear strength (GPa): {shear_strength_gpa}")
                     return shear_strength_gpa
                 else:
-                    st.text("No match found.")  # Using st.text instead of logging
+                    st.text("No match found.")
                     return None
         except Exception as e:
-            # In case of any error, use st.text to show the error and return None
-            st.text(f"Error: {e}")  # Using st.text instead of logging
+            st.text(f"Error: {e}")
             return None
     return None
 
@@ -139,7 +132,8 @@ def load_sorted_data(T, molar_ratios):
         if dir_path is None:
             continue
 
-        shear_strength = load_shear_strength_for_structure(dir_path)
+        shear_dir_path = os.path.join('workspace/shear', os.path.basename(dir_path))
+        shear_strength = load_shear_strength_for_structure(shear_dir_path)
 
         #st.text(f"Checking shear strength for structure: {filename} in {dir_path}")  # Debugging output
         #st.text(f"Shear strength for {filename}: {shear_strength}")  # Debugging output
