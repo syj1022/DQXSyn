@@ -133,6 +133,7 @@ def load_sorted_data(T, molar_ratios):
             continue
 
         shear_dir_path = os.path.join('workspace/shear', os.path.basename(dir_path))
+        st.text(dir_path)
         shear_strength = load_shear_strength_for_structure(shear_dir_path)
 
         #st.text(f"Checking shear strength for structure: {filename} in {dir_path}")  # Debugging output
