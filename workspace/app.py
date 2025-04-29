@@ -225,7 +225,7 @@ if 'boltzmann_prob' in df.columns:
     df_top['index'] = range(len(df_top))
 
     # Add structure path column - points directly to filename in stable directory
-    df_top['structure_path'] = df_top['filename'].apply(lambda x: os.path.join('workspace', 'stable', 'generated', x))
+    df_top['structure_path'] = df_top['filename'].apply(lambda x: os.path.join('workspace', 'stable', 'generated', f"{x}.cif"))
     
     # [Keep your existing chart code]
     
