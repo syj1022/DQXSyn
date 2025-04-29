@@ -1,0 +1,33 @@
+data_image0
+_chemical_formula_structural       CaMg2SiO4
+_chemical_formula_sum              "Ca1 Mg2 Si1 O4"
+_cell_length_a       4.862644370371976
+_cell_length_b       4.8659341994557845
+_cell_length_c       5.492650985717773
+_cell_angle_alpha    116.2652274596728
+_cell_angle_beta     116.29665949893047
+_cell_angle_gamma    90.08773728118244
+
+_space_group_name_H-M_alt    "P 1"
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ca  Ca1       1.0  0.05891983211040497  0.46154528856277466  0.019317330792546272  1.0000
+  Mg  Mg1       1.0  0.3082738220691681  0.21165823936462402  0.5198870301246643  1.0000
+  Mg  Mg2       1.0  0.8082194328308105  0.7110798954963684  0.5198351740837097  1.0000
+  Si  Si1       1.0  0.5583827495574951  0.9612480998039244  0.020056739449501038  1.0000
+  O   O1        1.0  0.8772901892662048  0.8835306167602539  0.26103928685188305  1.0000
+  O   O2        1.0  0.23886974155902863  0.6411299109458923  0.7774366736412048  1.0000
+  O   O3        1.0  0.4807033836841583  0.2813027501106262  0.2610364258289337  1.0000
+  O   O4        1.0  0.637288510799408  0.04086153581738472  0.7777315974235535  1.0000
