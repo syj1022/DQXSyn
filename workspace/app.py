@@ -171,7 +171,7 @@ if 'boltzmann_prob' in df.columns:
     
     base = alt.Chart(df_top).encode(
         x=alt.X('index:O', 
-                axis=alt.Axis(title='Generated Structure Index', labels=False, ticks=False)),
+                axis=alt.Axis(title='Bulk Structure', labels=False, ticks=False)),
         tooltip=['formula', 'boltzmann_prob:Q', 'formation_energy:Q', 'gibbs_formation_energy:Q']
     )
     
@@ -206,8 +206,8 @@ if 'boltzmann_prob' in df.columns:
     st.dataframe(
         df_top[['formula', 'boltzmann_prob', 'formation_energy', 'gibbs_formation_energy']].rename(columns={
             'boltzmann_prob': 'Probability',
-            'formation_energy': 'Formation Energy (eV/atom)',
-            'gibbs_formation_energy': 'Formation Free Energy (eV/atom)'
+            'formation_energy': 'Formation Energy (meV/atom)',
+            'gibbs_formation_energy': 'Formation Free Energy (meV/atom)'
         }).style.format({
             'Probability': '{:.2%}',
             'Formation Energy (eV/atom)': '{:.3f}',
