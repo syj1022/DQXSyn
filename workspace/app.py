@@ -160,6 +160,9 @@ if 'boltzmann_prob' in df.columns:
     top_n = 30
     df_top = df_sorted.head(top_n)
 
+    if len(df_top) < top_n:
+        st.warning(f"Only {len(df_top)} structures available, displaying all.")
+
     chart = alt.Chart(df_top).mark_bar().encode(
         x=alt.X('formula', sort='-y', title='Formula'),
         y=alt.Y('boltzmann_prob', title='Boltzmann Probability'),
