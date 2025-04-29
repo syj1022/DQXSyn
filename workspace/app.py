@@ -224,28 +224,55 @@ if 'boltzmann_prob' in df.columns:
     df_top = df.head(30).copy()
     df_top['index'] = range(len(df_top))
 
+    # Add structure path column - points directly to filename in stable directory
     df_top['structure_path'] = df_top['filename'].apply(
-        lambda x: os.path.join('workspace', 'stable', 'generated', f"{x}.cif") if pd.notnull(x) else None
+        lambda x: os.path.join('workspace', 'stable', 'generated', x)
     )
 
+    # --- Chart code (keep yours here if you have) ---
+
     st.subheader("Detailed Data with Structures")
-    
+
     for idx, row in df_top.iterrows():
-        with st.expander(f"{row['formula']} - Probability: {row['boltzmann_prob']:.2%}"):
+        with st.expander(f"{row.get('formula', 'Unknown')} - Probability: {row.get('boltzmann_prob', 0):.2%}"):
             col1, col2 = st.columns([1, 2])
 
             with col1:
-                st.write(f"**Formation Energy:** {row['formation_energy']:.3f} eV/atom")
-                st.write(f"**Gibbs Free Energy:** {row['gibbs_formation_energy']:.3f} eV/atom")
-                st.write(f"**Probability:** {row['boltzmann_prob']:.2%}")
-                st.write(f"**Filename:** {row['filename']}")
-                
+                st.write(f"**Formation Energy:** {row.get('formation_energy', float('nan')):.3f} eV/atom")
+                st.write(f"**Gibbs Free Energy:** {row.get('gibbs_formation_energy', float('nan')):.3f} eV/atom")
+                st.write(f"**Probability:** {row.get('boltzmann_prob', 0):.2%}")
+                st.write(f"**Filename:** {row.get('filename', 'N/A')}")
+
             with col2:
                 structure_path = row.get('structure_path', None)
                 if structure_path and os.path.exists(structure_path):
-                    # [rest of your code...]
-                    pass
+                    try:
+                        atoms = read(structure_path)
+
+                        st.write(f"**File type:** {os.path.splitext(structure_path)[1]}")
+                        st.write(f"**Atoms:** {len(atoms)}")
+
+                        try:
+                            import py3Dmol
+                            with tempfile.NamedTemporaryFile(suffix='.cif', delete=False) as tmp:
+                                atoms.write(tmp.name, format='cif')
+                                view = py3Dmol.view()
+                                view.addModel(open(tmp.name).read(), 'cif')
+                                view.setStyle({
+                                    'sphere': {'colorscheme': 'Jmol', 'scale': 0.3},
+                                    'stick': {'colorscheme': 'Jmol', 'radius': 0.2}
+                                })
+                                view.zoomTo()
+                                st.components.v1.html(view._make_html(), height=400)
+                        except ImportError:
+                            st.warning("3D viewer not available. Install it with: pip install py3Dmol")
+                            st.code(atoms)
+                    except Exception as e:
+                        st.error(f"Error reading structure file: {str(e)}")
+                        st.write(f"Attempted path: {structure_path}")
                 else:
                     st.warning(f"Structure file not found at: {structure_path}")
-else:
-    st.warning("'boltzmann_prob' not found in data. Cannot build detailed structure view.")
+                    dir_path = os.path.dirname(structure_path) if structure_path else None
+                    if dir_path and os.path.exists(dir_path):
+                        st.write("Directory contents:")
+                        st.code(os.listdir(dir_path))
