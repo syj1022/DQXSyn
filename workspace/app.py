@@ -48,7 +48,18 @@ def get_O_G_corr(T):
         geometry='nonlinear', symmetrynumber=2, spin=0)
 
     return thermo_h2o.get_gibbs_energy(T, 101325, verbose=False) - thermo_h2.get_gibbs_energy(T, 101325, verbose=False) + 2.46 + 460.8683
-  
+
+def load_shear_strength_for_structure(directory):
+    shear_strength_file = os.path.join(directory, 'shear_strength.txt')
+    if os.path.exists(shear_strength_file):
+        try:
+            with open(shear_strength_file, 'r') as f:
+                strength = f.readline().strip()
+                return float(strength)
+        except ValueError:
+            return None
+    return None
+    
 def load_sorted_data(T, molar_ratios):
     k_B = 8.617333262e-2  # meV/K
     kT = k_B * T
@@ -105,6 +116,8 @@ def load_sorted_data(T, molar_ratios):
         if dir_path is None:
             continue
 
+        shear_strength = load_shear_strength_for_structure(dir_path)
+        
         index = os.path.basename(dir_path)
         G_correction = get_G_corr(f'workspace/stable/{index}/mapping.txt', T)
 
@@ -120,6 +133,7 @@ def load_sorted_data(T, molar_ratios):
             'gibbs_formation_energy': gibbs_formation_energy,
             'energy_std': energy_std,
             'force_std': force_std,
+            'shear_strength': shear_strength,
         })
 
     filtered_data = [d for d in data if d['energy_std'] <= 40 and d['force_std'] <= 1]
@@ -133,6 +147,17 @@ def load_sorted_data(T, molar_ratios):
     for i, d in enumerate(sorted_data):
         d['boltzmann_prob'] = probabilities[i]
 
+    strengths = [
+        d['shear_strength'] * d['boltzmann_prob']
+        for d in sorted_data if d['shear_strength'] is not None
+    ]
+    weighted_avg_strength = sum(strengths) if strengths else None
+
+    if weighted_avg_strength is not None:
+        print(f"Boltzmann-weighted Avg. Shear Strength: {weighted_avg_strength:.2f} GPa")
+    else:
+        print("Shear strength data missing for most structures.")
+        
     return sorted_data
 
 # ========== STREAMLIT UI ==========
