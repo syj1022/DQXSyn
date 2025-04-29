@@ -49,21 +49,38 @@ def get_O_G_corr(T):
 
     return thermo_h2o.get_gibbs_energy(T, 101325, verbose=False) - thermo_h2.get_gibbs_energy(T, 101325, verbose=False) + 2.46 + 460.8683
 
+import re
+import os
+import logging
+
+# Set up logging to a file
+logging.basicConfig(filename='shear_strength_debug.log', level=logging.DEBUG)
+
 def load_shear_strength_for_structure(directory):
     shear_strength_file = os.path.join(directory, 'shear_strength.txt')
     if os.path.exists(shear_strength_file):
         try:
             with open(shear_strength_file, 'r') as f:
+                # Read the first line of the file
                 line = f.readline().strip()
+                logging.debug(f"Raw line: '{line}'")  # Logging instead of printing
+
+                # Use regex to extract the GPa value from the string
                 match = re.search(r'\(([\d\.]+)\s*GPa\)', line)
                 if match:
+                    # Extract the GPa value as a float
                     shear_strength_gpa = float(match.group(1))
+                    logging.debug(f"Extracted shear strength (GPa): {shear_strength_gpa}")  # Logging instead of printing
                     return shear_strength_gpa
                 else:
+                    logging.debug("No match found.")  # Logging instead of printing
                     return None
         except Exception as e:
+            # In case of any error, log the error and return None
+            logging.error(f"Error: {e}")  # Logging instead of printing
             return None
     return None
+
     
 def load_sorted_data(T, molar_ratios):
     k_B = 8.617333262e-2  # meV/K
@@ -123,8 +140,8 @@ def load_sorted_data(T, molar_ratios):
 
         shear_strength = load_shear_strength_for_structure(dir_path)
 
-        st.text(f"Checking shear strength for structure: {filename} in {dir_path}")  # Debugging output
-        st.text(f"Shear strength for {filename}: {shear_strength}")  # Debugging output
+        #st.text(f"Checking shear strength for structure: {filename} in {dir_path}")  # Debugging output
+        #st.text(f"Shear strength for {filename}: {shear_strength}")  # Debugging output
 
         index = os.path.basename(dir_path)
         G_correction = get_G_corr(f'workspace/stable/{index}/mapping.txt', T)
