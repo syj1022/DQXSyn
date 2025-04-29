@@ -224,13 +224,10 @@ if 'boltzmann_prob' in df.columns:
     df_top = df.head(30).copy()
     df_top['index'] = range(len(df_top))
 
-    # Add structure path safely
-    if 'filename' in df_top.columns:
-        df_top['structure_path'] = df_top['filename'].apply(
-            lambda x: os.path.join('workspace', 'stable', 'generated', x)
-        )
-    else:
-        df_top['structure_path'] = None
+    # Add structure path column - points directly to filename in stable directory
+    df_top['structure_path'] = df_top['filename'].apply(
+        lambda x: os.path.join('workspace', 'stable', 'generated', x)
+    )
 
     st.subheader("Detailed Data with Structures")
 
@@ -245,7 +242,7 @@ if 'boltzmann_prob' in df.columns:
                 st.write(f"**Filename:** {row.get('filename', 'N/A')}")
 
             with col2:
-                structure_path = row.get('structure_path', None)
+                structure_path = row.get('structure_path')  # Using .get() is safer
                 if structure_path and os.path.exists(structure_path):
                     try:
                         atoms = read(structure_path)
