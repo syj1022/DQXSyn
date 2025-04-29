@@ -107,7 +107,7 @@ def load_sorted_data(T, molar_ratios):
 
         index = os.path.basename(dir_path)
         G_correction = get_G_corr(f'workspace/stable/{index}/mapping.txt', T)
-
+        print(G_correction)
         correction = sum((chemical_potentials.get(elem, 0.0)+G_corr.get(elem, 0.0)) * count for elem, count in composition.items())
         n_atoms = sum(composition.values())
         corrected_formation_energy = formation_energy - correction / n_atoms
@@ -122,18 +122,18 @@ def load_sorted_data(T, molar_ratios):
             'force_std': force_std,
         })
 
-filtered_data = [d for d in data if d['energy_std'] <= 40 and d['force_std'] <= 1]
-sorted_data = sorted(filtered_data, key=lambda x: x['gibbs_formation_energy'])
+    filtered_data = [d for d in data if d['energy_std'] <= 40 and d['force_std'] <= 1]
+    sorted_data = sorted(filtered_data, key=lambda x: x['gibbs_formation_energy'])
 
-gibbs_formation_energies = np.array([d['gibbs_formation_energy'] for d in sorted_data])
-boltzmann_factors = np.exp(-gibbs_formation_energies / kT)
-partition_function = np.sum(boltzmann_factors)
-probabilities = boltzmann_factors / partition_function
+    gibbs_formation_energies = np.array([d['gibbs_formation_energy'] for d in sorted_data])
+    boltzmann_factors = np.exp(-gibbs_formation_energies / kT)
+    partition_function = np.sum(boltzmann_factors)
+    probabilities = boltzmann_factors / partition_function
 
-for i, d in enumerate(sorted_data):
-    d['boltzmann_prob'] = probabilities[i]
+    for i, d in enumerate(sorted_data):
+        d['boltzmann_prob'] = probabilities[i]
 
-return sorted_data
+    return sorted_data
 
 # ========== STREAMLIT UI ==========
 
