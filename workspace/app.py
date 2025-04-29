@@ -159,7 +159,7 @@ if 'boltzmann_prob' in df.columns:
 
     top_n = 30
     df_top = df_sorted.head(top_n)
-    print(len(df_top))
+
     if len(df_top) < top_n:
         st.warning(f"Only {len(df_top)} structures available, displaying all.")
 
