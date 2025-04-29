@@ -149,14 +149,14 @@ from ase.io import read
 
 st.title("🔬 Mg-Ca-Si-O Phase Probability")
 
-# Create sliders in two columns
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 with col1:
-    T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
-    CaO = st.slider("CaO molar ratio", 0.01, 10.0, 1.0, step=0.1)
-with col2:
     MgO = st.slider("MgO molar ratio", 0.01, 10.0, 1.0, step=0.1)
+with col2:
+    CaO = st.slider("CaO molar ratio", 0.01, 10.0, 1.0, step=0.1)
+with col3:
     SiO2 = st.slider("SiO₂ molar ratio", 0.01, 10.0, 1.0, step=0.1)
+T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
 O2 = st.slider("O₂ partial pressure (atom)", 0.01, 50.0, 1.0, step=0.1)
 
 # Load and process data
@@ -186,12 +186,11 @@ if 'boltzmann_prob' in df.columns:
         y=alt.Y('boltzmann_prob:Q', title='Boltzmann Probability'),
         color=alt.Color('boltzmann_prob:Q', legend=None, scale=alt.Scale(scheme='blues')))
     
-    # Create text labels with rotation
     text = base.mark_text(
         align='center',
         baseline='bottom',
-        dy=-5,  # Adjust vertical position
-        angle=20,  # Rotate labels
+        dy=-5,
+        angle=90,
         fontSize=10
     ).encode(
         y='boltzmann_prob:Q',
@@ -200,7 +199,6 @@ if 'boltzmann_prob' in df.columns:
     
     # Combine the layers
     chart = (bars + text).properties(
-        title=f'Top Structures at {T} K',
         width=800,
         height=500
     ).configure_axis(
