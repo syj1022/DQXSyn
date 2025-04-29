@@ -224,19 +224,8 @@ if 'boltzmann_prob' in df.columns:
     df_top = df.head(30).copy()
     df_top['index'] = range(len(df_top))
 
-
-    from pathlib import Path
-
-    def get_structure_path(filename):
-        base_path = Path('workspace') / 'stable'
-        filepath = base_path / f"{filename}.cif"
-
-        if filepath.exists():
-            return str(filepath)
-        return None
-
     # Add structure path column - points directly to filename in stable directory
-    #df_top['structure_path'] = df_top['filename'].apply(lambda x: os.path.join('workspace', 'stable', x))
+    df_top['structure_path'] = df_top['filename'].apply(lambda x: os.path.join('workspace', 'stable', x))
     
     # [Keep your existing chart code]
     
