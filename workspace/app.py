@@ -218,18 +218,31 @@ if 'boltzmann_prob' in df.columns:
     )
 
 
-
-
-
-
 # [Previous imports remain the same]
 
 if 'boltzmann_prob' in df.columns:
     df_top = df.head(30).copy()
     df_top['index'] = range(len(df_top))
+
+
+    def get_structure_path(filename):
+    base_path = Path('workspace') / 'stable' / filename
+    possible_files = [
+        base_path / "structure.cif",
+        base_path / f"{filename}.cif",
+        base_path / "POSCAR",
+        base_path / "CONTCAR"
+    ]
     
+    for filepath in possible_files:
+        if filepath.exists():
+            return str(filepath)
+    return None
+
+    df_top['structure_path'] = df_top['filename'].apply(get_structure_path)
+
     # Add structure path column - points directly to filename in stable directory
-    df_top['structure_path'] = df_top['filename'].apply(lambda x: os.path.join('workspace', 'stable', x))
+    #df_top['structure_path'] = df_top['filename'].apply(lambda x: os.path.join('workspace', 'stable', x))
     
     # [Keep your existing chart code]
     
@@ -249,14 +262,11 @@ if 'boltzmann_prob' in df.columns:
                 structure_path = row['structure_path']
                 if os.path.exists(structure_path):
                     try:
-                        # Read the structure file
                         atoms = read(structure_path)
                         
-                        # Display basic info
                         st.write(f"**File type:** {os.path.splitext(structure_path)[1]}")
                         st.write(f"**Atoms:** {len(atoms)}")
                         
-                        # Visualization
                         try:
                             import py3Dmol
                             with tempfile.NamedTemporaryFile(suffix='.cif', delete=False) as tmp:
