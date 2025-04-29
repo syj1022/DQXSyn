@@ -202,8 +202,8 @@ if 'boltzmann_prob' in df.columns:
             'gibbs_formation_energy': 'Formation Free Energy (meV/atom)'
         }).style.format({
             'Composition': '{:.2%}',
-            'Formation Energy (eV/atom)': '{:.3f}',
-            'Formation Free Energy (eV/atom)': '{:.3f}'
+            'Formation Energy (meV/atom)': '{:.3f}',
+            'Formation Free Energy (meV/atom)': '{:.3f}'
         }),
         height=400,
         use_container_width=True
@@ -235,8 +235,8 @@ if 'boltzmann_prob' in df.columns:
             col1, col2 = st.columns([1, 2])
 
             with col1:
-                st.write(f"**Formation Energy:** {df_top.at[idx, 'formation_energy']:.3f} eV/atom")
-                st.write(f"**Formation Free Energy:** {df_top.at[idx, 'gibbs_formation_energy']:.3f} eV/atom")
+                st.write(f"**Formation Energy:** {df_top.at[idx, 'formation_energy']:.3f} meV/atom")
+                st.write(f"**Formation Free Energy:** {df_top.at[idx, 'gibbs_formation_energy']:.3f} meV/atom")
                 st.write(f"**Probability:** {prob:.2%}")
                 st.write(f"**Filename:** {df_top.at[idx, 'filename']}")
 
