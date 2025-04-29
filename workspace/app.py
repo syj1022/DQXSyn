@@ -168,7 +168,7 @@ if 'boltzmann_prob' in df.columns:
     )
     
     bars = base.mark_bar().encode(
-        y=alt.Y('boltzmann_prob:Q', title='Boltzmann Probability'),
+        y=alt.Y('boltzmann_prob:Q', title='Composition'),
         color=alt.Color('boltzmann_prob:Q', legend=None, scale=alt.Scale(scheme='blues')))
     
     text = base.mark_text(
