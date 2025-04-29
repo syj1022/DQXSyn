@@ -227,12 +227,7 @@ if 'boltzmann_prob' in df.columns:
 
     def get_structure_path(filename):
         base_path = Path('workspace') / 'stable' / filename
-        possible_files = [
-            base_path / "structure.cif",
-            base_path / f"{filename}.cif",
-            base_path / "POSCAR",
-            base_path / "CONTCAR"
-        ]
+        possible_files = [base_path / f"{filename}.cif"]
     
         for filepath in possible_files:
             if filepath.exists():
