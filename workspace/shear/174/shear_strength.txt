@@ -1,0 +1,2 @@
+Shear strength: 0.071095 eV/Å³ (11.39 GPa)
+At shear strain: 0.088088
