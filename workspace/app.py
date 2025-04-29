@@ -146,7 +146,7 @@ with col1:
     MgO = st.slider("MgO molar ratio", 0.01, 10.0, 1.0, step=0.1)
 with col2:
     SiO2 = st.slider("SiO₂ molar ratio", 0.01, 10.0, 1.0, step=0.1)
-    O2 = st.slider("O₂ molar ratio", 0.01, 50.0, 1.0, step=0.1)
+    O2 = st.slider("O₂ partial pressure (atom)", 0.01, 50.0, 1.0, step=0.1)
 
 sorted_data = load_sorted_data(T, {
     'CaO': CaO, 'MgO': MgO, 'SiO2': SiO2, 'O2': O2
@@ -163,13 +163,15 @@ if 'boltzmann_prob' in df.columns:
     if len(df_top) < top_n:
         st.warning(f"Only {len(df_top)} structures available, displaying all.")
 
-    chart = alt.Chart(df_top).mark_bar().encode(
+    chart = alt.Chart(df_top).mark_bar(size=20).encode(
         x=alt.X('formula', sort='-y', title='Formula'),
         y=alt.Y('boltzmann_prob', title='Boltzmann Probability'),
         tooltip=['formula', 'boltzmann_prob']
     ).properties(
-        title='Top Structures by Boltzmann Probability',
+        #title='Top Structures by Boltzmann Probability',
         width=600
     ).configure_axis()
+
+    st.altair_chart(chart, use_container_width=True)
 
     st.altair_chart(chart, use_container_width=True)
