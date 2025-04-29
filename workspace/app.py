@@ -35,13 +35,13 @@ def get_O_G_corr(T):
     thermo_h2 = IdealGasThermo(
         vib_energies=[0.0049848, 0.012958, 0.0161448, 0.5484644],
         potentialenergy=-32.9423,
-        atoms=read('H2/opt.traj'),
+        atoms=read('workspace/H2/opt.traj'),
         geometry='linear', symmetrynumber=2, spin=0)
 
     thermo_h2o = IdealGasThermo(
         vib_energies=[0.02377, 0.02554, 0.20178, 0.46406, 0.47837],
         potentialenergy=-496.2706,
-        atoms=read('H2O/opt.traj'),
+        atoms=read('workspace/H2O/opt.traj'),
         geometry='nonlinear', symmetrynumber=2, spin=0)
 
     return thermo_h2o.get_gibbs_energy(T, 101325, verbose=False) - thermo_h2.get_gibbs_energy(T, 101325, verbose=False) + 2.46 + 460.8683
