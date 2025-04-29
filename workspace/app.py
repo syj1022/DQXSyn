@@ -159,29 +159,23 @@ with col3:
 T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
 O2 = st.slider("O₂ partial pressure (atom)", 0.01, 50.0, 1.0, step=0.1)
 
-# Load and process data
 sorted_data = load_sorted_data(T, {
     'CaO': CaO, 'MgO': MgO, 'SiO2': SiO2, 'O2': O2
 })
 
-# Convert to DataFrame
 df = pd.DataFrame(sorted_data)
 
 if 'boltzmann_prob' in df.columns:
-    # Take top 30 structures
     df_top = df.head(30).copy()
     
-    # Create index for x-axis positioning
     df_top['index'] = range(len(df_top))
     
-    # Create the base chart
     base = alt.Chart(df_top).encode(
         x=alt.X('index:O', 
                 axis=alt.Axis(title='Generated Structure Index', labels=False, ticks=False)),
         tooltip=['formula', 'boltzmann_prob:Q', 'formation_energy:Q', 'gibbs_formation_energy:Q']
     )
     
-    # Create bars
     bars = base.mark_bar().encode(
         y=alt.Y('boltzmann_prob:Q', title='Boltzmann Probability'),
         color=alt.Color('boltzmann_prob:Q', legend=None, scale=alt.Scale(scheme='blues')))
@@ -189,15 +183,14 @@ if 'boltzmann_prob' in df.columns:
     text = base.mark_text(
         align='center',
         baseline='bottom',
-        dy=0,
-        angle=180,
+        dy=5,
+        angle=270,
         fontSize=10
     ).encode(
         y='boltzmann_prob:Q',
         text='formula:N'
     )
     
-    # Combine the layers
     chart = (bars + text).properties(
         width=800,
         height=500
@@ -210,7 +203,6 @@ if 'boltzmann_prob' in df.columns:
     
     st.altair_chart(chart, use_container_width=True)
     
-    # Show data table
     st.subheader("Detailed Data")
     st.dataframe(
         df_top[['formula', 'boltzmann_prob', 'formation_energy', 'gibbs_formation_energy']].rename(columns={
