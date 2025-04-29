@@ -225,16 +225,15 @@ if 'boltzmann_prob' in df.columns:
     df_top['index'] = range(len(df_top))
 
 
-    def get_structure_path(filename):
-        base_path = Path('workspace') / 'stable' / filename
-        possible_files = [base_path / f"{filename}.cif"]
-    
-        for filepath in possible_files:
-            if filepath.exists():
-                return str(filepath)
-        return None
+    from pathlib import Path
 
-    df_top['structure_path'] = df_top['filename'].apply(get_structure_path)
+    def get_structure_path(filename):
+        base_path = Path('workspace') / 'stable'
+        filepath = base_path / f"{filename}.cif"
+
+        if filepath.exists():
+            return str(filepath)
+        return None
 
     # Add structure path column - points directly to filename in stable directory
     #df_top['structure_path'] = df_top['filename'].apply(lambda x: os.path.join('workspace', 'stable', x))
