@@ -207,11 +207,11 @@ if 'boltzmann_prob' in df.columns:
         df_top[['formula', 'boltzmann_prob', 'formation_energy', 'gibbs_formation_energy']].rename(columns={
             'boltzmann_prob': 'Probability',
             'formation_energy': 'Formation Energy (eV/atom)',
-            'gibbs_formation_energy': 'Gibbs Energy (eV/atom)'
+            'gibbs_formation_energy': 'Formation Free Energy (eV/atom)'
         }).style.format({
             'Probability': '{:.2%}',
             'Formation Energy (eV/atom)': '{:.3f}',
-            'Gibbs Energy (eV/atom)': '{:.3f}'
+            'Formation Free Energy (eV/atom)': '{:.3f}'
         }),
         height=400,
         use_container_width=True
