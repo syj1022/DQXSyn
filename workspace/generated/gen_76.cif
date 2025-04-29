@@ -1,0 +1,33 @@
+data_image0
+_chemical_formula_structural       OCaMgOMg2O2
+_chemical_formula_sum              "O4 Ca1 Mg3"
+_cell_length_a       4.484759820961014
+_cell_length_b       4.482932146224575
+_cell_length_c       5.41832160949707
+_cell_angle_alpha    114.39197873425942
+_cell_angle_beta     114.46440644189384
+_cell_angle_gamma    90.00179350936126
+
+_space_group_name_H-M_alt    "P 1"
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  O   O1        1.0  0.15371310710906982  0.42436498403549194  0.576644778251648  1.0000
+  Ca  Ca1       1.0  0.4183766841888428  0.689400315284729  0.10711286962032326  1.0000
+  Mg  Mg1       1.0  0.168351411819458  0.9391335248947144  0.606607735157013  1.0000
+  O   O2        1.0  0.6828740239143372  0.9536442160606384  0.6360900402069093  1.0000
+  Mg  Mg2       1.0  0.9183609485626221  0.1894630789756775  0.10641374439001083  1.0000
+  Mg  Mg3       1.0  0.668340265750885  0.43938252329826355  0.6059893965721131  1.0000
+  O   O3        1.0  0.41837170720100403  0.18941614031791687  0.10678970813751221  1.0000
+  O   O4        1.0  0.9178544878959656  0.6892558336257935  0.10609191656112679  1.0000
