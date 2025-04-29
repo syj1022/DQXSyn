@@ -280,6 +280,12 @@ if 'boltzmann_prob' in df.columns:
                 st.write(f"**Formation Free Energy:** {df_top.at[idx, 'gibbs_formation_energy']:.3f} meV/atom")
                 st.write(f"**Probability:** {prob:.2%}")
                 st.write(f"**Filename:** {df_top.at[idx, 'filename']}")
+                if 'shear_strength' in df_top.columns:
+                    shear_strength = df_top.at[idx, 'shear_strength']
+                    if pd.notnull(shear_strength):
+                        st.write(f"**Shear Strength:** {shear_strength:.3f} GPa")
+                    else:
+                        st.write("**Shear Strength:** N/A")
 
             with col2:
                 if structure_path and os.path.exists(structure_path):
