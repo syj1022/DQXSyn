@@ -154,22 +154,69 @@ sorted_data = load_sorted_data(T, {
 
 df = pd.DataFrame(sorted_data)
 
-if 'boltzmann_prob' in df.columns:
-    df_sorted = df.sort_values('boltzmann_prob', ascending=False)
+##########
+# Replace your current plotting code with this:
 
+if 'boltzmann_prob' in df.columns:
+    # Sort by probability in descending order
+    df_sorted = df.sort_values('boltzmann_prob', ascending=False).copy()
+    
+    # Format probability for display
+    df_sorted['prob_percent'] = df_sorted['boltzmann_prob'] * 100
+    
     top_n = 30
     df_top = df_sorted.head(top_n)
 
     if len(df_top) < top_n:
         st.warning(f"Only {len(df_top)} structures available, displaying all.")
 
+    # Create the chart with proper sorting
     chart = alt.Chart(df_top).mark_bar().encode(
-        x=alt.X('formula', sort='-y', title='Formula'),
-        y=alt.Y('boltzmann_prob', title='Boltzmann Probability'),
-        tooltip=['formula', 'boltzmann_prob']
+        x=alt.X(
+            'formula:N',
+            sort=alt.EncodingSortField(field='boltzmann_prob', order='descending'),
+            title='Formula',
+            axis=alt.Axis(labelAngle=-45)  # Rotate labels for better readability
+        ),
+        y=alt.Y(
+            'prob_percent:Q',
+            title='Probability (%)',
+            scale=alt.Scale(zero=False)  # Don't force zero baseline
+        ),
+        tooltip=[
+            alt.Tooltip('formula', title='Formula'),
+            alt.Tooltip('boltzmann_prob:Q', format='.2%', title='Probability'),
+            alt.Tooltip('formation_energy:Q', format='.3f', title='Formation Energy (eV/atom)'),
+            alt.Tooltip('gibbs_formation_energy:Q', format='.3f', title='Gibbs Energy (eV/atom)'),
+            alt.Tooltip('energy_std:Q', format='.1f', title='Energy std (meV)'),
+            alt.Tooltip('force_std:Q', format='.2f', title='Force std (eV/Å)')
+        ],
+        color=alt.Color('boltzmann_prob:Q', legend=None, scale=alt.Scale(scheme='blues'))
     ).properties(
-        title='Top Structures by Boltzmann Probability',
-        width=600
-    ).configure_axis()
+        title=f'Top {len(df_top)} Structures at {T} K',
+        width=600,
+        height=400
+    ).configure_axis(
+        labelFontSize=12,
+        titleFontSize=14
+    ).configure_view(
+        strokeWidth=0  # Remove border
+    )
 
     st.altair_chart(chart, use_container_width=True)
+    
+    # Also show the data as a table
+    st.subheader("Detailed Data")
+    display_cols = ['formula', 'boltzmann_prob', 'formation_energy', 'gibbs_formation_energy']
+    st.dataframe(
+        df_sorted[display_cols].rename(columns={
+            'boltzmann_prob': 'Probability',
+            'formation_energy': 'Formation Energy',
+            'gibbs_formation_energy': 'Gibbs Energy'
+        }).style.format({
+            'Probability': '{:.1%}',
+            'Formation Energy': '{:.3f}',
+            'Gibbs Energy': '{:.3f}'
+        }),
+        height=400
+    )
