@@ -1,4 +1,4 @@
 streamlit>=1.20
 ase>=3.22
 numpy>=1.23
-
+py3Dmol
