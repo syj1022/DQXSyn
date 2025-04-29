@@ -117,7 +117,10 @@ def load_sorted_data(T, molar_ratios):
             continue
 
         shear_strength = load_shear_strength_for_structure(dir_path)
-        
+
+        st.text(f"Checking shear strength for structure: {filename} in {dir_path}")  # Debugging output
+        st.text(f"Shear strength for {filename}: {shear_strength}")  # Debugging output
+
         index = os.path.basename(dir_path)
         G_correction = get_G_corr(f'workspace/stable/{index}/mapping.txt', T)
 
