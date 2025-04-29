@@ -94,8 +94,8 @@ def load_sorted_data(T, molar_ratios):
         composition = parse_formula(formula)
 
         dir_path = None
-        for dir_name in os.listdir('stable'):
-            candidate_path = os.path.join('stable', dir_name)
+        for dir_name in os.listdir('workspace/stable'):
+            candidate_path = os.path.join('workspace/stable', dir_name)
             if os.path.isdir(candidate_path):
                 if filename in os.listdir(candidate_path):
                     dir_path = candidate_path
