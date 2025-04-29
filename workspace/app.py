@@ -1,12 +1,11 @@
 import os
 import re
+import altair as alt
 import numpy as np
 import pandas as pd
 from collections import defaultdict
 import streamlit as st
 from ase.io import read
-
-print("Current working directory:", os.getcwd())
 
 def parse_formula(formula):
     elements = re.findall(r'([A-Z][a-z]*)(\d*)', formula)
@@ -152,30 +151,21 @@ sorted_data = load_sorted_data(T, {
     'CaO': CaO, 'MgO': MgO, 'SiO2': SiO2, 'O2': O2
 })
 
-# Get top structures
 top_n = 30
 top_structures = sorted_data[:top_n]
 
-# Convert to DataFrame
 df = pd.DataFrame(top_structures)
 
-# Sort by Boltzmann probability in descending order
 df_sorted = df.sort_values('boltzmann_prob', ascending=False)
 
-# Option 1: Use Streamlit's bar_chart (Make sure the sorting works as expected)
-st.bar_chart(df_sorted.set_index('formula')['boltzmann_prob'])
-
-# Option 2: Use Altair for more flexibility in sorting and control
-import altair as alt
 
 chart = alt.Chart(df_sorted).mark_bar().encode(
     x=alt.X('boltzmann_prob', title='Boltzmann Probability'),
-    y=alt.Y('formula', sort='-x', title='Formula'),  # Sort by Boltzmann probability
+    y=alt.Y('formula', sort='-x', title='Formula'),
     tooltip=['formula', 'boltzmann_prob']
 ).properties(
     title='Top Structures by Boltzmann Probability'
 )
 
-# Show the Altair chart
 st.altair_chart(chart, use_container_width=True)
 
