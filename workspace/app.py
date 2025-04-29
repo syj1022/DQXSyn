@@ -189,8 +189,8 @@ if 'boltzmann_prob' in df.columns:
     text = base.mark_text(
         align='center',
         baseline='bottom',
-        dy=-5,
-        angle=90,
+        dy=0,
+        angle=180,
         fontSize=10
     ).encode(
         y='boltzmann_prob:Q',
