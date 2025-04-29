@@ -169,10 +169,10 @@ def load_sorted_data(T, molar_ratios):
     ]
     weighted_avg_strength = sum(strengths) if strengths else None
 
-    #if weighted_avg_strength is not None:
-    #    st.metric(label="Boltzmann-weighted Avg. Shear Strength", value=f"{weighted_avg_strength:.2f} GPa")
-    #else:
-    #    st.text("Shear strength data missing for most structures.")
+    if weighted_avg_strength is not None:
+        st.metric(label="Boltzmann-weighted Avg. Shear Strength", value=f"{weighted_avg_strength:.2f} GPa")
+    else:
+        st.text("Shear strength data missing for most structures.")
         
     return sorted_data
 
