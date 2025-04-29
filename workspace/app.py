@@ -197,11 +197,11 @@ if 'boltzmann_prob' in df.columns:
     st.subheader("Summary Table")
     st.dataframe(
         df_top[['formula', 'boltzmann_prob', 'formation_energy', 'gibbs_formation_energy']].rename(columns={
-            'boltzmann_prob': 'Probability',
+            'boltzmann_prob': 'Composition',
             'formation_energy': 'Formation Energy (meV/atom)',
             'gibbs_formation_energy': 'Formation Free Energy (meV/atom)'
         }).style.format({
-            'Probability': '{:.2%}',
+            'Composition': '{:.2%}',
             'Formation Energy (eV/atom)': '{:.3f}',
             'Formation Free Energy (eV/atom)': '{:.3f}'
         }),
