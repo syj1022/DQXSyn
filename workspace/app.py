@@ -136,87 +136,93 @@ def load_sorted_data(T, molar_ratios):
 
 # ========== STREAMLIT UI ==========
 
-st.title("🔬 Mg-Ca-Si-O")
+import os
+import re
+import altair as alt
+import numpy as np
+import pandas as pd
+from collections import defaultdict
+import streamlit as st
+from ase.io import read
 
-T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
+# [Keep all your existing functions: parse_formula, get_G_corr, get_O_G_corr, load_sorted_data]
 
+st.title("🔬 Mg-Ca-Si-O Phase Probability")
+
+# Create sliders in two columns
 col1, col2 = st.columns(2)
 with col1:
+    T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
     CaO = st.slider("CaO molar ratio", 0.01, 10.0, 1.0, step=0.1)
-    MgO = st.slider("MgO molar ratio", 0.01, 10.0, 1.0, step=0.1)
 with col2:
+    MgO = st.slider("MgO molar ratio", 0.01, 10.0, 1.0, step=0.1)
     SiO2 = st.slider("SiO₂ molar ratio", 0.01, 10.0, 1.0, step=0.1)
-    O2 = st.slider("O₂ partial pressure (atom)", 0.01, 50.0, 1.0, step=0.1)
+O2 = st.slider("O₂ partial pressure (atom)", 0.01, 50.0, 1.0, step=0.1)
 
+# Load and process data
 sorted_data = load_sorted_data(T, {
     'CaO': CaO, 'MgO': MgO, 'SiO2': SiO2, 'O2': O2
 })
 
+# Convert to DataFrame
 df = pd.DataFrame(sorted_data)
 
-##########
-# Replace your current plotting code with this:
-
 if 'boltzmann_prob' in df.columns:
-    # Sort by probability in descending order
-    df_sorted = df.sort_values('boltzmann_prob', ascending=False).copy()
+    # Take top 30 structures
+    df_top = df.head(30).copy()
     
-    # Format probability for display
-    df_sorted['prob_percent'] = df_sorted['boltzmann_prob'] * 100
+    # Create index for x-axis positioning
+    df_top['index'] = range(len(df_top))
     
-    top_n = 30
-    df_top = df_sorted.head(top_n)
-
-    if len(df_top) < top_n:
-        st.warning(f"Only {len(df_top)} structures available, displaying all.")
-
-    # Create the chart with proper sorting
-    chart = alt.Chart(df_top).mark_bar().encode(
-        x=alt.X(
-            'formula:N',
-            sort=alt.EncodingSortField(field='boltzmann_prob', order='descending'),
-            title='Formula',
-            axis=alt.Axis(labelAngle=-45)  # Rotate labels for better readability
-        ),
-        y=alt.Y(
-            'prob_percent:Q',
-            title='Probability (%)',
-            scale=alt.Scale(zero=False)  # Don't force zero baseline
-        ),
-        tooltip=[
-            alt.Tooltip('formula', title='Formula'),
-            alt.Tooltip('boltzmann_prob:Q', format='.2%', title='Probability'),
-            alt.Tooltip('formation_energy:Q', format='.3f', title='Formation Energy (eV/atom)'),
-            alt.Tooltip('gibbs_formation_energy:Q', format='.3f', title='Gibbs Energy (eV/atom)'),
-            alt.Tooltip('energy_std:Q', format='.1f', title='Energy std (meV)'),
-            alt.Tooltip('force_std:Q', format='.2f', title='Force std (eV/Å)')
-        ],
+    # Create the base chart
+    base = alt.Chart(df_top).encode(
+        x=alt.X('index:O', axis=alt.Axis(title='Generated Structure Index', labels=False, ticks=False),
+        tooltip=['formula', 'boltzmann_prob:Q', 'formation_energy:Q', 'gibbs_formation_energy:Q']
+    )
+    
+    # Create bars
+    bars = base.mark_bar().encode(
+        y=alt.Y('boltzmann_prob:Q', title='Boltzmann Probability'),
         color=alt.Color('boltzmann_prob:Q', legend=None, scale=alt.Scale(scheme='blues'))
-    ).properties(
-        title=f'Top {len(df_top)} Structures at {T} K',
-        width=600,
-        height=400
+    
+    # Create text labels with rotation
+    text = base.mark_text(
+        align='center',
+        baseline='bottom',
+        dy=-5,  # Adjust vertical position
+        angle=20,  # Rotate labels
+        fontSize=10
+    ).encode(
+        y='boltzmann_prob:Q',
+        text='formula:N'
+    )
+    
+    # Combine the layers
+    chart = (bars + text).properties(
+        title=f'Top Structures at {T} K',
+        width=800,
+        height=500
     ).configure_axis(
         labelFontSize=12,
         titleFontSize=14
     ).configure_view(
-        strokeWidth=0  # Remove border
+        strokeWidth=0
     )
-
+    
     st.altair_chart(chart, use_container_width=True)
     
-    # Also show the data as a table
+    # Show data table
     st.subheader("Detailed Data")
-    display_cols = ['formula', 'boltzmann_prob', 'formation_energy', 'gibbs_formation_energy']
     st.dataframe(
-        df_sorted[display_cols].rename(columns={
+        df_top[['formula', 'boltzmann_prob', 'formation_energy', 'gibbs_formation_energy']].rename(columns={
             'boltzmann_prob': 'Probability',
-            'formation_energy': 'Formation Energy',
-            'gibbs_formation_energy': 'Gibbs Energy'
+            'formation_energy': 'Formation Energy (eV/atom)',
+            'gibbs_formation_energy': 'Gibbs Energy (eV/atom)'
         }).style.format({
-            'Probability': '{:.1%}',
-            'Formation Energy': '{:.3f}',
-            'Gibbs Energy': '{:.3f}'
+            'Probability': '{:.2%}',
+            'Formation Energy (eV/atom)': '{:.3f}',
+            'Gibbs Energy (eV/atom)': '{:.3f}'
         }),
-        height=400
+        height=400,
+        use_container_width=True
     )
