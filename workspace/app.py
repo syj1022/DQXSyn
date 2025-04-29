@@ -151,6 +151,7 @@ sorted_data = load_sorted_data(T, {
     'CaO': CaO, 'MgO': MgO, 'SiO2': SiO2, 'O2': O2
 })
 
+df = pd.DataFrame(top_structures)
 df_sorted = df.sort_values('boltzmann_prob', ascending=False)
 
 top_n = 30
