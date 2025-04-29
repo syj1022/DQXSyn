@@ -151,20 +151,23 @@ sorted_data = load_sorted_data(T, {
     'CaO': CaO, 'MgO': MgO, 'SiO2': SiO2, 'O2': O2
 })
 
-top_n = 30
-top_structures = sorted_data[:top_n]
-
-df = pd.DataFrame(top_structures)
-
 df_sorted = df.sort_values('boltzmann_prob', ascending=False)
 
+top_n = 30
+df_top = df_sorted.head(top_n)
 
-chart = alt.Chart(df_sorted).mark_bar().encode(
-    x=alt.X('boltzmann_prob', title='Boltzmann Probability'),
-    y=alt.Y('formula', sort='-x', title='Formula'),
-    tooltip=['formula', 'boltzmann_prob']
+chart = alt.Chart(df_top).mark_bar().encode(
+    x=alt.X('formula', sort=None, title='Formula'),  # X is now formula, not Boltzmann prob
+    y=alt.Y('boltzmann_prob', title='Boltzmann Probability'),  # Y is Boltzmann prob
+    tooltip=['formula', 'boltzmann_prob']  # Tooltip to display both formula and probability
 ).properties(
     title='Top Structures by Boltzmann Probability'
+)
+
+chart = chart.configure_axis(
+    labelAngle=0  # Rotate labels to horizontal
+).configure_view(
+    width=500  # Fix the width of the chart for better clarity
 )
 
 st.altair_chart(chart, use_container_width=True)
