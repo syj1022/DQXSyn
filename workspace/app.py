@@ -59,18 +59,14 @@ def load_shear_strength_for_structure(directory):
         try:
             with open(shear_strength_file, 'r') as f:
                 line = f.readline().strip()
-                st.text(f"Raw line: '{line}'")
 
                 match = re.search(r'\(([\d\.]+)\s*GPa\)', line)
                 if match:
                     shear_strength_gpa = float(match.group(1))
-                    st.text(f"Extracted shear strength (GPa): {shear_strength_gpa}")
                     return shear_strength_gpa
                 else:
-                    st.text("No match found.")
                     return None
         except Exception as e:
-            st.text(f"Error: {e}")
             return None
     return None
 
@@ -135,7 +131,7 @@ def load_sorted_data(T, molar_ratios):
         shear_dir_path = os.path.join('workspace/shear', os.path.basename(dir_path))
         shear_strength = load_shear_strength_for_structure(shear_dir_path)
 
-        st.text(f"Checking shear strength for structure: {filename} in {shear_dir_path}")  # Debugging output
+        #st.text(f"Checking shear strength for structure: {filename} in {shear_dir_path}")  # Debugging output
         #st.text(f"Shear strength for {filename}: {shear_strength}")  # Debugging output
 
         index = os.path.basename(dir_path)
@@ -185,7 +181,7 @@ def load_sorted_data(T, molar_ratios):
 st.title("🔬 Mg-Ca-Si-O Phase Distribution")
 
 T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
-O2 = st.slider("O₂ partial pressure (atm)", 0.01, 100.0, 1.0, step=0.1)
+O2 = st.slider("O₂ partial pressure (atm)", 0.01, 50.0, 1.0, step=0.1)
 
 col1, col2, col3 = st.columns(3)
 with col1:
