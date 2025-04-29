@@ -37,13 +37,13 @@ def get_O_G_corr(T):
     thermo_h2 = IdealGasThermo(
         vib_energies=[0.0049848, 0.012958, 0.0161448, 0.5484644],
         potentialenergy=-32.9423,
-        atoms=read('workspace/H2/opt.traj'),
+        atoms=read('H2/opt.traj'),
         geometry='linear', symmetrynumber=2, spin=0)
 
     thermo_h2o = IdealGasThermo(
         vib_energies=[0.02377, 0.02554, 0.20178, 0.46406, 0.47837],
         potentialenergy=-496.2706,
-        atoms=read('workspace/H2O/opt.traj'),
+        atoms=read('H2O/opt.traj'),
         geometry='nonlinear', symmetrynumber=2, spin=0)
 
     return thermo_h2o.get_gibbs_energy(T, 101325, verbose=False) - thermo_h2.get_gibbs_energy(T, 101325, verbose=False) + 2.46 + 460.8683
@@ -63,9 +63,9 @@ def load_sorted_data(T, molar_ratios):
     }
 
     G_corr = {
-        'Ca': get_G_corr('workspace/ref/cao_mapping.txt', T),
-        'Mg': get_G_corr('workspace/ref/mgo_mapping.txt', T),
-        'Si': get_G_corr('workspace/ref/sio2_mapping.txt', T),
+        'Ca': get_G_corr('ref/cao_mapping.txt', T),
+        'Mg': get_G_corr('ref/mgo_mapping.txt', T),
+        'Si': get_G_corr('ref/sio2_mapping.txt', T),
         'O': get_O_G_corr(T),
     }
 
@@ -105,7 +105,7 @@ def load_sorted_data(T, molar_ratios):
             continue
 
         index = os.path.basename(dir_path)
-        G_correction = get_G_corr(f'workspace/stable/{index}/mapping.txt', T)
+        G_correction = get_G_corr(f'stable/{index}/mapping.txt', T)
 
         correction = sum((chemical_potentials.get(elem, 0.0)+G_corr.get(elem, 0.0)) * count for elem, count in composition.items())
         n_atoms = sum(composition.values())
