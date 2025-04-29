@@ -54,9 +54,14 @@ def load_shear_strength_for_structure(directory):
     if os.path.exists(shear_strength_file):
         try:
             with open(shear_strength_file, 'r') as f:
-                strength = f.readline().strip()
-                return float(strength)
-        except ValueError:
+                line = f.readline().strip()
+                match = re.search(r'\(([\d\.]+)\s*GPa\)', line)
+                if match:
+                    shear_strength_gpa = float(match.group(1))
+                    return shear_strength_gpa
+                else:
+                    return None
+        except Exception as e:
             return None
     return None
     
