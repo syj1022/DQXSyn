@@ -251,7 +251,7 @@ if 'boltzmann_prob' in df.columns:
             with col1:
                 # Ensure no KeyError by using `.get` and setting a fallback value
                 st.write(f"**Formation Energy:** {df_top.at[idx, 'formation_energy']:.3f} eV/atom")
-                st.write(f"**Gibbs Free Energy:** {df_top.at[idx, 'gibbs_formation_energy']:.3f} eV/atom")
+                st.write(f"**Formation Free Energy:** {df_top.at[idx, 'gibbs_formation_energy']:.3f} eV/atom")
                 st.write(f"**Probability:** {prob:.2%}")
                 st.write(f"**Filename:** {df_top.at[idx, 'filename']}")
 
