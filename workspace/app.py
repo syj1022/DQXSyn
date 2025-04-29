@@ -231,7 +231,7 @@ if 'boltzmann_prob' in df.columns:
         prob = df_top.at[idx, 'boltzmann_prob'] if 'boltzmann_prob' in df_top.columns else 0
         structure_path = df_top.at[idx, 'structure_path']
 
-        with st.expander(f"{formula} - Probability: {prob:.2%}"):
+        with st.expander(f"{formula} - Composition: {prob:.2%}"):
             col1, col2 = st.columns([1, 2])
 
             with col1:
