@@ -122,29 +122,20 @@ def load_sorted_data(T, molar_ratios):
             'force_std': force_std,
         })
 
-    filtered_data = [d for d in data if d['energy_std'] <= 40 and d['force_std'] <= 1]
-    sorted_data = sorted(filtered_data, key=lambda x: x['gibbs_formation_energy'])
+filtered_data = [d for d in data if d['energy_std'] <= 40 and d['force_std'] <= 1]
+sorted_data = sorted(filtered_data, key=lambda x: x['gibbs_formation_energy'])
 
-    gibbs_formation_energies = np.array([d['gibbs_formation_energy'] for d in sorted_data])
-    boltzmann_factors = np.exp(-gibbs_formation_energies / kT)
-    partition_function = np.sum(boltzmann_factors)
-    probabilities = boltzmann_factors / partition_function
+gibbs_formation_energies = np.array([d['gibbs_formation_energy'] for d in sorted_data])
+boltzmann_factors = np.exp(-gibbs_formation_energies / kT)
+partition_function = np.sum(boltzmann_factors)
+probabilities = boltzmann_factors / partition_function
 
-    for i, d in enumerate(sorted_data):
-        d['boltzmann_prob'] = probabilities[i]
+for i, d in enumerate(sorted_data):
+    d['boltzmann_prob'] = probabilities[i]
 
-    return sorted_data
+return sorted_data
 
 # ========== STREAMLIT UI ==========
-
-import os
-import re
-import altair as alt
-import numpy as np
-import pandas as pd
-from collections import defaultdict
-import streamlit as st
-from ase.io import read
 
 st.title("🔬 Mg-Ca-Si-O Phase Distribution")
 
@@ -222,24 +213,19 @@ if 'boltzmann_prob' in df.columns:
 # [Previous imports remain the same]
 
 if 'boltzmann_prob' in df.columns:
-    # Take top 30 rows for display
     df_top = df.head(30).copy()
     df_top['index'] = range(len(df_top))
 
-    # Function to generate the structure path
     def make_structure_path(filename):
         if isinstance(filename, str) and filename.strip():  # Ensure filename is valid
             return os.path.join('workspace', 'stable', 'generated', filename)
         else:
             return None
 
-    # Add the structure path column, checking that 'filename' exists and is valid
     df_top['structure_path'] = df_top['filename'].apply(make_structure_path)
 
-    # Display detailed data with structures
     st.subheader("Visualized Structures")
 
-    # Loop through the top 30 rows
     for idx in range(len(df_top)):
         formula = df_top.at[idx, 'formula'] if 'formula' in df_top.columns else 'Unknown'
         prob = df_top.at[idx, 'boltzmann_prob'] if 'boltzmann_prob' in df_top.columns else 0
@@ -249,14 +235,12 @@ if 'boltzmann_prob' in df.columns:
             col1, col2 = st.columns([1, 2])
 
             with col1:
-                # Ensure no KeyError by using `.get` and setting a fallback value
                 st.write(f"**Formation Energy:** {df_top.at[idx, 'formation_energy']:.3f} eV/atom")
                 st.write(f"**Formation Free Energy:** {df_top.at[idx, 'gibbs_formation_energy']:.3f} eV/atom")
                 st.write(f"**Probability:** {prob:.2%}")
                 st.write(f"**Filename:** {df_top.at[idx, 'filename']}")
 
             with col2:
-                # Ensure structure path is valid and file exists
                 if structure_path and os.path.exists(structure_path):
                     try:
                         # Read the structure
@@ -285,7 +269,6 @@ if 'boltzmann_prob' in df.columns:
                         st.error(f"Error reading structure: {str(e)}")
                         st.write(f"Attempted path: {structure_path}")
                 else:
-                    # Handle case where structure path doesn't exist or is invalid
                     st.warning(f"Structure file not found at: {structure_path}")
                     if structure_path:
                         dir_path = os.path.dirname(structure_path)
