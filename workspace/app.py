@@ -5,6 +5,8 @@ from collections import defaultdict
 import streamlit as st
 from ase.io import read
 
+print("Current working directory:", os.getcwd())
+
 def parse_formula(formula):
     elements = re.findall(r'([A-Z][a-z]*)(\d*)', formula)
     counts = defaultdict(int)
