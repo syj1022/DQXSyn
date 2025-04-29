@@ -154,6 +154,8 @@ sorted_data = load_sorted_data(T, {
 top_n = 30
 top_structures = sorted_data[:top_n]
 
-st.bar_chart({
-    d['formula']: d['boltzmann_prob'] for d in top_structures
-})
+df = pd.DataFrame(top_structures)
+
+df_sorted = df.sort_values('boltzmann_prob', ascending=False)
+
+st.bar_chart(df_sorted.set_index('formula')['boltzmann_prob'])
