@@ -1,0 +1,66 @@
+#!/bin/bash
+
+#SBATCH -N 1
+#SBATCH --tasks-per-node=2
+#SBATCH --gres=gpu:1
+#SBATCH -t 5-00:00:00
+#SBATCH -J phonon
+#SBATCH -o out.%A_%a
+#SBATCH -e err.%A_%a
+#SBATCH --mail-user=yingjies9898@gmail.com
+#SBATCH --mem=5G
+#SBATCH --mail-type=NONE
+#SBATCH -p g_rrig
+#SBATCH --array=0-199
+
+cd $SLURM_SUBMIT_DIR
+export OMP_NUM_THREADS=1
+module purge
+module load gpu/nvidia_sdk/20.9
+
+cd /scratch/alevoj1/YingjieS/DQX/phonon/stable/$(printf "%02d" $SLURM_ARRAY_TASK_ID)
+
+GEN_CIF_FILE=$(ls gen*.cif | head -n 1)
+
+if [ -z "$GEN_CIF_FILE" ]; then
+  echo "No gen*cif file found in the directory. Exiting..."
+  exit 1
+fi
+
+echo "Found gen*cif file: $GEN_CIF_FILE"
+
+a=$(python -c "from ase import io; structure = io.read('$GEN_CIF_FILE'); print(structure.get_cell().lengths()[0])")
+b=$(python -c "from ase import io; structure = io.read('$GEN_CIF_FILE'); print(structure.get_cell().lengths()[1])")
+c=$(python -c "from ase import io; structure = io.read('$GEN_CIF_FILE'); print(structure.get_cell().lengths()[2])")
+
+repeat_x=1
+repeat_y=1
+repeat_z=1
+
+[ $(echo "$a < 6" | bc) -eq 1 ] && repeat_x=2
+[ $(echo "$b < 6" | bc) -eq 1 ] && repeat_y=2
+[ $(echo "$c < 6" | bc) -eq 1 ] && repeat_z=2
+
+echo "Cell dimensions: a=$a, b=$b, c=$c"
+echo "Repeat factors: ${repeat_x}x${repeat_y}x${repeat_z}"
+
+#source /home/yingjies/anaconda3/bin/activate nff
+#python /scratch/alevoj1/YingjieS/DQX/scripts/relax_bulk.py
+#python /scratch/alevoj1/YingjieS/DQX/phonon/cleanup.py
+#conda deactivate
+
+#source /home/yingjies/anaconda3/bin/activate phonopy
+#phonopy --qe -c pw.in -d --dim $repeat_x $repeat_y $repeat_z --pa auto
+
+#python /scratch/alevoj1/YingjieS/DQX/phonon/qe_traj.py
+#conda deactivate
+
+#source /home/yingjies/anaconda3/bin/activate vssr-mc
+#python /scratch/alevoj1/YingjieS/DQX/phonon/painn_opt.py
+#python /scratch/alevoj1/YingjieS/DQX/phonon/get_force_sets.py
+#conda deactivate
+
+source /home/yingjies/anaconda3/bin/activate phonopy
+phonopy --qe -c pw.in --dim="$repeat_x $repeat_y $repeat_z" --mesh="20 20 20" --tmax=2000 --tstep=10 -t -p
+conda deactivate
+
