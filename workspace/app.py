@@ -300,7 +300,8 @@ if 'boltzmann_prob' in df.columns:
                         try:
                             import py3Dmol
                             with tempfile.NamedTemporaryFile(suffix='.cif', delete=False) as tmp:
-                                atoms.write(tmp.name, format='cif')
+                                atoms_supercell = atoms.repeat((2, 2, 2))
+                                atoms_supercell.write(tmp.name, format='cif')
                                 view = py3Dmol.view()
                                 view.addModel(open(tmp.name).read(), 'cif')
                                 view.setStyle({
