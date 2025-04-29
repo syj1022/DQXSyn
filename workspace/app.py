@@ -212,12 +212,24 @@ if 'boltzmann_prob' in df.columns:
 
 # [Previous imports remain the same]
 
+shear_strength_dict = {}
+with open("shear_strength.txt", "r") as f:
+    for line in f:
+        if line.strip():
+            parts = line.strip().split()
+            if len(parts) >= 3:
+                filename, shear_strength, strain_at_max = parts[0], float(parts[1]), float(parts[2])
+                shear_strength_dict[filename] = {
+                    "shear_strength": shear_strength,
+                    "strain_at_max": strain_at_max
+                }
+                
 if 'boltzmann_prob' in df.columns:
     df_top = df.head(30).copy()
     df_top['index'] = range(len(df_top))
 
     def make_structure_path(filename):
-        if isinstance(filename, str) and filename.strip():  # Ensure filename is valid
+        if isinstance(filename, str) and filename.strip():
             return os.path.join('workspace', 'generated', filename)
         else:
             return None
@@ -230,6 +242,8 @@ if 'boltzmann_prob' in df.columns:
         formula = df_top.at[idx, 'formula'] if 'formula' in df_top.columns else 'Unknown'
         prob = df_top.at[idx, 'boltzmann_prob'] if 'boltzmann_prob' in df_top.columns else 0
         structure_path = df_top.at[idx, 'structure_path']
+        filename = df_top.at[idx, 'filename']
+        shear_info = shear_strength_dict.get(filename, None)
 
         with st.expander(f"{formula} - Composition: {prob:.2%}"):
             col1, col2 = st.columns([1, 2])
@@ -238,18 +252,20 @@ if 'boltzmann_prob' in df.columns:
                 st.write(f"**Formation Energy:** {df_top.at[idx, 'formation_energy']:.3f} meV/atom")
                 st.write(f"**Formation Free Energy:** {df_top.at[idx, 'gibbs_formation_energy']:.3f} meV/atom")
                 st.write(f"**Probability:** {prob:.2%}")
-                st.write(f"**Filename:** {df_top.at[idx, 'filename']}")
+                st.write(f"**Filename:** {filename}")
+
+                if shear_info:
+                    st.write(f"**Shear Strength:** {shear_info['shear_strength']:.3f} eV/Å³ "
+                             f"({shear_info['shear_strength'] * 160.2:.2f} GPa)")
+                    st.write(f"**At Shear Strain:** {shear_info['strain_at_max']:.4f}")
 
             with col2:
                 if structure_path and os.path.exists(structure_path):
                     try:
-                        # Read the structure
                         atoms = read(structure_path)
-
                         st.write(f"**File type:** {os.path.splitext(structure_path)[1]}")
                         st.write(f"**Atoms:** {len(atoms)}")
 
-                        # Display structure in 3D viewer if possible
                         try:
                             import py3Dmol
                             with tempfile.NamedTemporaryFile(suffix='.cif', delete=False) as tmp:
