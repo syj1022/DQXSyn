@@ -1,0 +1,1218 @@
+gen_0.cif: CaOSi
+Raw energy = -1647.209961 eV
+Formation Energy = 3548.880021 meV/atom
+Energy s.t.d. = 14.214590 meV/atom
+Mean force s.t.d. = 0.069427 eV/Å
+
+gen_60.cif: Ca2OSi
+Raw energy = -2671.663818 eV
+Formation Energy = 3876.821410 meV/atom
+Energy s.t.d. = 9.160013 meV/atom
+Mean force s.t.d. = 0.109227 eV/Å
+
+gen_20.cif: CaMgO6Si
+Raw energy = -5050.768555 eV
+Formation Energy = 414.122146 meV/atom
+Energy s.t.d. = 4.390856 meV/atom
+Mean force s.t.d. = 0.057142 eV/Å
+
+gen_180.cif: Ca2MgO7Si2
+Raw energy = -6711.884277 eV
+Formation Energy = 38.998138 meV/atom
+Energy s.t.d. = 3.171349 meV/atom
+Mean force s.t.d. = 0.108451 eV/Å
+
+gen_80.cif: CaMg2O7Si2
+Raw energy = -6774.879395 eV
+Formation Energy = 37.980872 meV/atom
+Energy s.t.d. = 3.216380 meV/atom
+Mean force s.t.d. = 0.045890 eV/Å
+
+gen_120.cif: CaMgOSi
+Raw energy = -2734.607178 eV
+Formation Energy = 3886.709066 meV/atom
+Energy s.t.d. = 13.913873 meV/atom
+Mean force s.t.d. = 0.180911 eV/Å
+
+gen_21.cif: Ca2MgO7Si2
+Raw energy = -6712.133789 eV
+Formation Energy = 18.205495 meV/atom
+Energy s.t.d. = 4.472633 meV/atom
+Mean force s.t.d. = 0.148863 eV/Å
+
+gen_121.cif: Ca2Mg2O2Si2
+Raw energy = -5465.775391 eV
+Formation Energy = 4316.579672 meV/atom
+Energy s.t.d. = 12.219946 meV/atom
+Mean force s.t.d. = 0.058483 eV/Å
+
+gen_160.cif: Ca2Mg3OSi2
+Raw energy = -6090.516602 eV
+Formation Energy = 5152.563930 meV/atom
+Energy s.t.d. = 25.071320 meV/atom
+Mean force s.t.d. = 0.237210 eV/Å
+
+gen_122.cif: MgOSi2
+Raw energy = -1869.277954 eV
+Formation Energy = 4808.831725 meV/atom
+Energy s.t.d. = 17.865484 meV/atom
+Mean force s.t.d. = 0.079758 eV/Å
+
+gen_181.cif: Ca2MgO7Si2
+Raw energy = -6712.115723 eV
+Formation Energy = 19.711029 meV/atom
+Energy s.t.d. = 10.135886 meV/atom
+Mean force s.t.d. = 0.222022 eV/Å
+
+gen_81.cif: CaO2Si
+Raw energy = -2112.535889 eV
+Formation Energy = 1547.260082 meV/atom
+Energy s.t.d. = 14.035733 meV/atom
+Mean force s.t.d. = 0.240952 eV/Å
+
+gen_100.cif: Ca2MgO6Si2
+Raw energy = -6247.503906 eV
+Formation Energy = 361.820068 meV/atom
+Energy s.t.d. = 15.904516 meV/atom
+Mean force s.t.d. = 0.281370 eV/Å
+
+gen_101.cif: CaO2Si
+Raw energy = -2112.447754 eV
+Formation Energy = 1569.293773 meV/atom
+Energy s.t.d. = 13.176762 meV/atom
+Mean force s.t.d. = 0.068629 eV/Å
+
+gen_40.cif: Ca2MgO5Si
+Raw energy = -5622.006836 eV
+Formation Energy = 103.888118 meV/atom
+Energy s.t.d. = 18.414705 meV/atom
+Mean force s.t.d. = 0.191548 eV/Å
+
+gen_82.cif: CaMgOSi
+Raw energy = -2733.968262 eV
+Formation Energy = 4046.438070 meV/atom
+Energy s.t.d. = 34.681980 meV/atom
+Mean force s.t.d. = 0.309096 eV/Å
+
+gen_161.cif: CaMgO4Si
+Raw energy = -4132.278809 eV
+Formation Energy = 68.598487 meV/atom
+Energy s.t.d. = 14.528672 meV/atom
+Mean force s.t.d. = 0.159162 eV/Å
+
+gen_61.cif: CaMg2O6Si
+Raw energy = -6144.883789 eV
+Formation Energy = 190.927794 meV/atom
+Energy s.t.d. = 22.868341 meV/atom
+Mean force s.t.d. = 0.401465 eV/Å
+
+gen_162.cif: CaMgOSi
+Raw energy = -2734.438965 eV
+Formation Energy = 3928.762289 meV/atom
+Energy s.t.d. = 12.217008 meV/atom
+Mean force s.t.d. = 0.099719 eV/Å
+
+gen_163.cif: MgO2Si
+Raw energy = -2175.620605 eV
+Formation Energy = 1521.808383 meV/atom
+Energy s.t.d. = 9.467909 meV/atom
+Mean force s.t.d. = 0.044005 eV/Å
+
+gen_62.cif: CaOSi2
+Raw energy = -1807.053955 eV
+Formation Energy = 4619.103980 meV/atom
+Energy s.t.d. = 13.214965 meV/atom
+Mean force s.t.d. = 0.202135 eV/Å
+
+gen_41.cif: Ca2MgO3Si2
+Raw energy = -4848.603027 eV
+Formation Energy = 2534.489457 meV/atom
+Energy s.t.d. = 21.983965 meV/atom
+Mean force s.t.d. = 0.574821 eV/Å
+
+gen_42.cif: CaO2Si
+Raw energy = -2112.471924 eV
+Formation Energy = 1563.251293 meV/atom
+Energy s.t.d. = 13.819933 meV/atom
+Mean force s.t.d. = 0.068025 eV/Å
+
+gen_1.cif: Ca2MgO4Si
+Raw energy = -5154.287109 eV
+Formation Energy = 973.298953 meV/atom
+Energy s.t.d. = 32.797787 meV/atom
+Mean force s.t.d. = 1.204664 eV/Å
+
+gen_2.cif: CaMgOSi
+Raw energy = -2734.386963 eV
+Formation Energy = 3941.762777 meV/atom
+Energy s.t.d. = 8.874583 meV/atom
+Mean force s.t.d. = 0.136810 eV/Å
+
+gen_22.cif: Ca3MgO12Si4
+Raw energy = -10382.021484 eV
+Formation Energy = -33.277319 meV/atom
+Energy s.t.d. = 6.945835 meV/atom
+Mean force s.t.d. = 0.235804 eV/Å
+
+gen_140.cif: Ca2Mg3O10Si3
+Raw energy = -10442.284180 eV
+Formation Energy = 274.536406 meV/atom
+Energy s.t.d. = 18.838373 meV/atom
+Mean force s.t.d. = 0.687525 eV/Å
+
+gen_102.cif: CaMg3O6Si
+Raw energy = -7237.334473 eV
+Formation Energy = 159.637031 meV/atom
+Energy s.t.d. = 14.299630 meV/atom
+Mean force s.t.d. = 0.266101 eV/Å
+
+gen_182.cif: CaMg3O7Si
+Raw energy = -7700.144043 eV
+Formation Energy = -15.436247 meV/atom
+Energy s.t.d. = 28.870596 meV/atom
+Mean force s.t.d. = 0.551035 eV/Å
+
+gen_123.cif: Ca2Mg3O12Si3
+Raw energy = -11369.265625 eV
+Formation Energy = -15.156700 meV/atom
+Energy s.t.d. = 8.041076 meV/atom
+Mean force s.t.d. = 0.185212 eV/Å
+
+gen_63.cif: Ca2Mg2O2Si2
+Raw energy = -5468.421387 eV
+Formation Energy = 3985.830160 meV/atom
+Energy s.t.d. = 34.495068 meV/atom
+Mean force s.t.d. = 0.635966 eV/Å
+
+gen_64.cif: CaOSi2
+Raw energy = -1807.159668 eV
+Formation Energy = 4592.675758 meV/atom
+Energy s.t.d. = 12.503150 meV/atom
+Mean force s.t.d. = 0.085468 eV/Å
+
+gen_3.cif: CaMg3O6Si
+Raw energy = -7237.683594 eV
+Formation Energy = 127.898750 meV/atom
+Energy s.t.d. = 10.230002 meV/atom
+Mean force s.t.d. = 0.210009 eV/Å
+
+gen_4.cif: CaMg2O4Si
+Raw energy = -5216.470215 eV
+Formation Energy = 1073.274520 meV/atom
+Energy s.t.d. = 7.344633 meV/atom
+Mean force s.t.d. = 0.054254 eV/Å
+
+gen_103.cif: CaMg2O7Si2
+Raw energy = -6773.745605 eV
+Formation Energy = 132.463294 meV/atom
+Energy s.t.d. = 3.752555 meV/atom
+Mean force s.t.d. = 0.116317 eV/Å
+
+gen_5.cif: CaO2Si
+Raw energy = -2112.485596 eV
+Formation Energy = 1559.833324 meV/atom
+Energy s.t.d. = 13.661688 meV/atom
+Mean force s.t.d. = 0.085747 eV/Å
+
+gen_43.cif: Ca4O8Si2
+Raw energy = -8140.983887 eV
+Formation Energy = -102.265051 meV/atom
+Energy s.t.d. = 10.741414 meV/atom
+Mean force s.t.d. = 0.187978 eV/Å
+
+gen_124.cif: CaMg3O4
+Raw energy = -6149.089355 eV
+Formation Energy = 73.837316 meV/atom
+Energy s.t.d. = 12.457881 meV/atom
+Mean force s.t.d. = 0.156804 eV/Å
+
+gen_183.cif: Ca2Mg3OSi2
+Raw energy = -6090.276367 eV
+Formation Energy = 5182.593227 meV/atom
+Energy s.t.d. = 34.793396 meV/atom
+Mean force s.t.d. = 0.444394 eV/Å
+
+gen_184.cif: CaMgO2
+Raw energy = -3042.928955 eV
+Formation Energy = 104.904230 meV/atom
+Energy s.t.d. = 8.471791 meV/atom
+Mean force s.t.d. = 0.089299 eV/Å
+
+gen_83.cif: Ca2MgO11Si4
+Raw energy = -8890.834961 eV
+Formation Energy = 18.785892 meV/atom
+Energy s.t.d. = 6.827091 meV/atom
+Mean force s.t.d. = 0.228698 eV/Å
+
+gen_185.cif: Ca2MgO6Si
+Raw energy = -6082.787109 eV
+Formation Energy = 102.304763 meV/atom
+Energy s.t.d. = 4.806328 meV/atom
+Mean force s.t.d. = 0.096947 eV/Å
+
+gen_104.cif: Ca4Mg2O2Si2
+Raw energy = -7517.409668 eV
+Formation Energy = 4152.736603 meV/atom
+Energy s.t.d. = 9.232631 meV/atom
+Mean force s.t.d. = 0.263085 eV/Å
+
+gen_186.cif: Ca2MgO6Si
+Raw energy = -6082.818848 eV
+Formation Energy = 99.130934 meV/atom
+Energy s.t.d. = 4.240607 meV/atom
+Mean force s.t.d. = 0.061867 eV/Å
+
+gen_187.cif: CaMgO2
+Raw energy = -3042.588623 eV
+Formation Energy = 189.987238 meV/atom
+Energy s.t.d. = 8.999637 meV/atom
+Mean force s.t.d. = 0.073176 eV/Å
+
+gen_188.cif: CaMgOSi
+Raw energy = -2734.197510 eV
+Formation Energy = 3989.126059 meV/atom
+Energy s.t.d. = 10.602382 meV/atom
+Mean force s.t.d. = 0.082093 eV/Å
+
+gen_189.cif: Ca2MgOSi
+Raw energy = -3758.867676 eV
+Formation Energy = 4120.168244 meV/atom
+Energy s.t.d. = 14.076872 meV/atom
+Mean force s.t.d. = 0.092271 eV/Å
+
+gen_84.cif: Ca2MgO6Si
+Raw energy = -6082.812500 eV
+Formation Energy = 99.765700 meV/atom
+Energy s.t.d. = 4.880679 meV/atom
+Mean force s.t.d. = 0.080785 eV/Å
+
+gen_6.cif: CaMgO3Si
+Raw energy = -3662.322754 eV
+Formation Energy = 1594.652682 meV/atom
+Energy s.t.d. = 64.141914 meV/atom
+Mean force s.t.d. = 0.589682 eV/Å
+
+gen_190.cif: CaMgOSi
+Raw energy = -2734.335938 eV
+Formation Energy = 3954.519125 meV/atom
+Energy s.t.d. = 11.360558 meV/atom
+Mean force s.t.d. = 0.298799 eV/Å
+
+gen_23.cif: Ca3Mg4O11Si2
+Raw energy = -12860.377930 eV
+Formation Energy = 82.718966 meV/atom
+Energy s.t.d. = 12.076955 meV/atom
+Mean force s.t.d. = 0.304413 eV/Å
+
+gen_24.cif: Ca2MgO7Si2
+Raw energy = -6711.874512 eV
+Formation Energy = 39.811940 meV/atom
+Energy s.t.d. = 2.878054 meV/atom
+Mean force s.t.d. = 0.089231 eV/Å
+
+gen_164.cif: Ca3Mg2O11Si4
+Raw energy = -11002.932617 eV
+Formation Energy = 492.620291 meV/atom
+Energy s.t.d. = 19.325039 meV/atom
+Mean force s.t.d. = 0.844337 eV/Å
+
+gen_165.cif: Ca2MgO6Si
+Raw energy = -6082.780762 eV
+Formation Energy = 102.939528 meV/atom
+Energy s.t.d. = 5.127509 meV/atom
+Mean force s.t.d. = 0.104547 eV/Å
+
+gen_166.cif: CaMgO6Si
+Raw energy = -5050.764648 eV
+Formation Energy = 414.556174 meV/atom
+Energy s.t.d. = 4.351801 meV/atom
+Mean force s.t.d. = 0.057676 eV/Å
+
+gen_167.cif: CaOSi2
+Raw energy = -1805.329346 eV
+Formation Energy = 5050.256324 meV/atom
+Energy s.t.d. = 30.901155 meV/atom
+Mean force s.t.d. = 0.388944 eV/Å
+
+gen_125.cif: CaMg3O6Si
+Raw energy = -7237.549316 eV
+Formation Energy = 140.105781 meV/atom
+Energy s.t.d. = 12.866488 meV/atom
+Mean force s.t.d. = 0.262839 eV/Å
+
+gen_168.cif: CaMg2O4Si
+Raw energy = -5216.560547 eV
+Formation Energy = 1061.983016 meV/atom
+Energy s.t.d. = 6.909285 meV/atom
+Mean force s.t.d. = 0.044349 eV/Å
+
+gen_126.cif: CaMgOSi
+Raw energy = -2734.435059 eV
+Formation Energy = 3929.738852 meV/atom
+Energy s.t.d. = 11.536100 meV/atom
+Mean force s.t.d. = 0.117580 eV/Å
+
+gen_105.cif: CaMg2O7Si2
+Raw energy = -6774.635742 eV
+Formation Energy = 58.285234 meV/atom
+Energy s.t.d. = 19.103693 meV/atom
+Mean force s.t.d. = 0.289247 eV/Å
+
+gen_169.cif: CaMg3O4
+Raw energy = -6148.348633 eV
+Formation Energy = 166.427648 meV/atom
+Energy s.t.d. = 9.883942 meV/atom
+Mean force s.t.d. = 0.105551 eV/Å
+
+gen_106.cif: Ca2MgO7Si2
+Raw energy = -6711.857422 eV
+Formation Energy = 41.236094 meV/atom
+Energy s.t.d. = 2.680612 meV/atom
+Mean force s.t.d. = 0.061929 eV/Å
+
+gen_107.cif: CaMg2O6Si
+Raw energy = -6144.376953 eV
+Formation Energy = 241.611387 meV/atom
+Energy s.t.d. = 4.386559 meV/atom
+Mean force s.t.d. = 0.051285 eV/Å
+
+gen_108.cif: CaMgO7Si2
+Raw energy = -5681.912598 eV
+Formation Energy = 102.286759 meV/atom
+Energy s.t.d. = 2.971386 meV/atom
+Mean force s.t.d. = 0.036479 eV/Å
+
+gen_65.cif: Ca2MgO2Si3
+Raw energy = -4540.975586 eV
+Formation Energy = 4338.599883 meV/atom
+Energy s.t.d. = 30.290409 meV/atom
+Mean force s.t.d. = 0.690746 eV/Å
+
+gen_66.cif: CaMgO6Si
+Raw energy = -5050.757812 eV
+Formation Energy = 415.315722 meV/atom
+Energy s.t.d. = 4.246624 meV/atom
+Mean force s.t.d. = 0.068551 eV/Å
+
+gen_85.cif: CaMgO6Si2
+Raw energy = -5221.309082 eV
+Formation Energy = 86.034197 meV/atom
+Energy s.t.d. = 25.579597 meV/atom
+Mean force s.t.d. = 0.404571 eV/Å
+
+gen_127.cif: CaMg2O4Si
+Raw energy = -5217.125488 eV
+Formation Energy = 991.365340 meV/atom
+Energy s.t.d. = 38.138031 meV/atom
+Mean force s.t.d. = 1.115785 eV/Å
+
+gen_86.cif: CaMg2O7Si2
+Raw energy = -6774.846680 eV
+Formation Energy = 40.707109 meV/atom
+Energy s.t.d. = 3.096233 meV/atom
+Mean force s.t.d. = 0.043923 eV/Å
+
+gen_87.cif: CaMgOSi3
+Raw energy = -3051.502930 eV
+Formation Energy = 5666.437385 meV/atom
+Energy s.t.d. = 11.697789 meV/atom
+Mean force s.t.d. = 0.120870 eV/Å
+
+gen_44.cif: CaMg2O4Si
+Raw energy = -5217.723633 eV
+Formation Energy = 916.597273 meV/atom
+Energy s.t.d. = 26.234674 meV/atom
+Mean force s.t.d. = 1.396085 eV/Å
+
+gen_191.cif: Ca2Mg2O8Si2
+Raw energy = -8264.641602 eV
+Formation Energy = 62.599603 meV/atom
+Energy s.t.d. = 15.176324 meV/atom
+Mean force s.t.d. = 0.234173 eV/Å
+
+gen_192.cif: CaOSi2
+Raw energy = -1807.145020 eV
+Formation Energy = 4596.337867 meV/atom
+Energy s.t.d. = 13.060833 meV/atom
+Mean force s.t.d. = 0.105382 eV/Å
+
+gen_193.cif: Ca2Mg2O2Si2
+Raw energy = -5465.668945 eV
+Formation Energy = 4329.885336 meV/atom
+Energy s.t.d. = 12.357251 meV/atom
+Mean force s.t.d. = 0.077483 eV/Å
+
+gen_45.cif: Ca2MgO4Si
+Raw energy = -5154.371094 eV
+Formation Energy = 962.800906 meV/atom
+Energy s.t.d. = 8.664892 meV/atom
+Mean force s.t.d. = 0.072462 eV/Å
+
+gen_109.cif: CaMgO6Si
+Raw energy = -5056.167480 eV
+Formation Energy = -185.758497 meV/atom
+Energy s.t.d. = 690.084473 meV/atom
+Mean force s.t.d. = 13.789927 eV/Å
+
+gen_110.cif: CaMgO6Si
+Raw energy = -5050.760254 eV
+Formation Energy = 415.044455 meV/atom
+Energy s.t.d. = 4.274221 meV/atom
+Mean force s.t.d. = 0.056608 eV/Å
+
+gen_111.cif: CaMg2O4Si
+Raw energy = -5216.458984 eV
+Formation Energy = 1074.678328 meV/atom
+Energy s.t.d. = 7.478842 meV/atom
+Mean force s.t.d. = 0.052273 eV/Å
+
+gen_25.cif: CaMg2O4Si
+Raw energy = -5217.599121 eV
+Formation Energy = 932.161238 meV/atom
+Energy s.t.d. = 19.168018 meV/atom
+Mean force s.t.d. = 1.146893 eV/Å
+
+gen_112.cif: CaMgOSi
+Raw energy = -2734.440674 eV
+Formation Energy = 3928.335043 meV/atom
+Energy s.t.d. = 11.937760 meV/atom
+Mean force s.t.d. = 0.091366 eV/Å
+
+gen_7.cif: CaMg2O4Si
+Raw energy = -5217.379883 eV
+Formation Energy = 959.566023 meV/atom
+Energy s.t.d. = 13.744156 meV/atom
+Mean force s.t.d. = 0.568702 eV/Å
+
+gen_113.cif: CaMgOSi2
+Raw energy = -2892.924805 eV
+Formation Energy = 4980.595863 meV/atom
+Energy s.t.d. = 32.122261 meV/atom
+Mean force s.t.d. = 0.461377 eV/Å
+
+gen_8.cif: Ca3MgO6Si2
+Raw energy = -7271.431641 eV
+Formation Energy = 780.565781 meV/atom
+Energy s.t.d. = 7.805050 meV/atom
+Mean force s.t.d. = 0.076352 eV/Å
+
+gen_114.cif: CaO2Si
+Raw energy = -2113.025635 eV
+Formation Energy = 1424.823559 meV/atom
+Energy s.t.d. = 11.450152 meV/atom
+Mean force s.t.d. = 0.086198 eV/Å
+
+gen_115.cif: Ca2MgO2Si
+Raw energy = -4223.965820 eV
+Formation Energy = 2728.504115 meV/atom
+Energy s.t.d. = 9.906512 meV/atom
+Mean force s.t.d. = 0.100620 eV/Å
+
+gen_116.cif: CaMgOSi
+Raw energy = -2734.342529 eV
+Formation Energy = 3952.871176 meV/atom
+Energy s.t.d. = 10.425350 meV/atom
+Mean force s.t.d. = 0.317882 eV/Å
+
+gen_194.cif: Ca4MgO2Si
+Raw energy = -6271.548340 eV
+Formation Energy = 3427.188895 meV/atom
+Energy s.t.d. = 15.285102 meV/atom
+Mean force s.t.d. = 0.346725 eV/Å
+
+gen_26.cif: CaMg2O6Si2
+Raw energy = -6309.333008 eV
+Formation Energy = 466.711744 meV/atom
+Energy s.t.d. = 27.368820 meV/atom
+Mean force s.t.d. = 0.512733 eV/Å
+
+gen_46.cif: Ca5MgO10Si2
+Raw energy = -11182.724609 eV
+Formation Energy = 9.785479 meV/atom
+Energy s.t.d. = 10.806704 meV/atom
+Mean force s.t.d. = 0.280087 eV/Å
+
+gen_67.cif: Ca4MgO10Si3
+Raw energy = -10317.866211 eV
+Formation Energy = 188.544670 meV/atom
+Energy s.t.d. = 13.138715 meV/atom
+Mean force s.t.d. = 0.441574 eV/Å
+
+gen_195.cif: Ca2MgO7Si2
+Raw energy = -6711.879395 eV
+Formation Energy = 39.405039 meV/atom
+Energy s.t.d. = 2.817081 meV/atom
+Mean force s.t.d. = 0.090276 eV/Å
+
+gen_68.cif: Ca2MgO4Si
+Raw energy = -5154.324219 eV
+Formation Energy = 968.660281 meV/atom
+Energy s.t.d. = 7.715750 meV/atom
+Mean force s.t.d. = 0.058875 eV/Å
+
+gen_141.cif: CaMg3O4
+Raw energy = -6148.351562 eV
+Formation Energy = 166.061438 meV/atom
+Energy s.t.d. = 10.406346 meV/atom
+Mean force s.t.d. = 0.131729 eV/Å
+
+gen_47.cif: Ca2MgO6Si
+Raw energy = -6082.831543 eV
+Formation Energy = 97.861403 meV/atom
+Energy s.t.d. = 3.443513 meV/atom
+Mean force s.t.d. = 0.083044 eV/Å
+
+gen_142.cif: CaMgOSi
+Raw energy = -2734.440430 eV
+Formation Energy = 3928.396078 meV/atom
+Energy s.t.d. = 12.046648 meV/atom
+Mean force s.t.d. = 0.099405 eV/Å
+
+gen_143.cif: Ca2MgOSi
+Raw energy = -3758.865723 eV
+Formation Energy = 4120.558869 meV/atom
+Energy s.t.d. = 13.614387 meV/atom
+Mean force s.t.d. = 0.103778 eV/Å
+
+gen_128.cif: CaMg2O4Si
+Raw energy = -5217.252441 eV
+Formation Energy = 975.496199 meV/atom
+Energy s.t.d. = 11.920525 meV/atom
+Mean force s.t.d. = 0.280732 eV/Å
+
+gen_9.cif: Ca5MgO8Si
+Raw energy = -10092.499023 eV
+Formation Energy = 66.086571 meV/atom
+Energy s.t.d. = 18.667810 meV/atom
+Mean force s.t.d. = 0.328087 eV/Å
+
+gen_88.cif: Ca3Mg2O8Si2
+Raw energy = -9289.410156 eV
+Formation Energy = 361.489517 meV/atom
+Energy s.t.d. = 29.457863 meV/atom
+Mean force s.t.d. = 0.856944 eV/Å
+
+gen_129.cif: CaMg2O4Si
+Raw energy = -5217.288574 eV
+Formation Energy = 970.979598 meV/atom
+Energy s.t.d. = 23.415794 meV/atom
+Mean force s.t.d. = 1.450603 eV/Å
+
+gen_144.cif: Ca2Mg2O9Si2
+Raw energy = -8726.679688 eV
+Formation Energy = -19.557567 meV/atom
+Energy s.t.d. = 7.268603 meV/atom
+Mean force s.t.d. = 0.246905 eV/Å
+
+gen_89.cif: Ca3OSi
+Raw energy = -3695.991943 eV
+Formation Energy = 4098.732728 meV/atom
+Energy s.t.d. = 18.783560 meV/atom
+Mean force s.t.d. = 0.140582 eV/Å
+
+gen_130.cif: Ca2MgO7Si2
+Raw energy = -6712.143555 eV
+Formation Energy = 17.391693 meV/atom
+Energy s.t.d. = 4.298794 meV/atom
+Mean force s.t.d. = 0.145011 eV/Å
+
+gen_131.cif: CaMgOSi
+Raw energy = -2734.379150 eV
+Formation Energy = 3943.715902 meV/atom
+Energy s.t.d. = 8.347579 meV/atom
+Mean force s.t.d. = 0.089175 eV/Å
+
+gen_117.cif: Ca2Mg2O12Si4
+Raw energy = -10445.068359 eV
+Formation Energy = -36.475569 meV/atom
+Energy s.t.d. = 10.648067 meV/atom
+Mean force s.t.d. = 0.155115 eV/Å
+
+gen_132.cif: CaOSi2
+Raw energy = -1807.043701 eV
+Formation Energy = 4621.667457 meV/atom
+Energy s.t.d. = 13.048138 meV/atom
+Mean force s.t.d. = 0.196650 eV/Å
+
+gen_145.cif: CaMg2O5Si
+Raw energy = -5684.276855 eV
+Formation Energy = 183.098170 meV/atom
+Energy s.t.d. = 17.319693 meV/atom
+Mean force s.t.d. = 0.206367 eV/Å
+
+gen_170.cif: Ca4MgO12Si3
+Raw energy = -11243.857422 eV
+Formation Energy = -43.037544 meV/atom
+Energy s.t.d. = 14.264809 meV/atom
+Mean force s.t.d. = 0.347217 eV/Å
+
+gen_146.cif: CaMgOSi
+Raw energy = -2734.196533 eV
+Formation Energy = 3989.370199 meV/atom
+Energy s.t.d. = 10.715687 meV/atom
+Mean force s.t.d. = 0.086207 eV/Å
+
+gen_27.cif: CaMgO3Si
+Raw energy = -3666.365234 eV
+Formation Energy = 920.905937 meV/atom
+Energy s.t.d. = 62.801682 meV/atom
+Mean force s.t.d. = 1.827086 eV/Å
+
+gen_28.cif: CaMgO7Si2
+Raw energy = -5681.919922 eV
+Formation Energy = 101.620920 meV/atom
+Energy s.t.d. = 2.210468 meV/atom
+Mean force s.t.d. = 0.030977 eV/Å
+
+gen_118.cif: Ca2MgO4Si
+Raw energy = -5155.428223 eV
+Formation Energy = 830.659793 meV/atom
+Energy s.t.d. = 8.533843 meV/atom
+Mean force s.t.d. = 0.072832 eV/Å
+
+gen_119.cif: CaOSi2
+Raw energy = -1807.153809 eV
+Formation Energy = 4594.140602 meV/atom
+Energy s.t.d. = 12.668085 meV/atom
+Mean force s.t.d. = 0.082442 eV/Å
+
+gen_196.cif: Ca3Mg3O11Si3
+Raw energy = -11931.513672 eV
+Formation Energy = 294.749706 meV/atom
+Energy s.t.d. = 10.296112 meV/atom
+Mean force s.t.d. = 0.533848 eV/Å
+
+gen_171.cif: Ca2Mg2O6Si2
+Raw energy = -7333.223633 eV
+Formation Energy = 879.808932 meV/atom
+Energy s.t.d. = 16.374205 meV/atom
+Mean force s.t.d. = 0.253388 eV/Å
+
+gen_48.cif: Ca2Mg2O9Si2
+Raw energy = -8726.180664 eV
+Formation Energy = 13.710663 meV/atom
+Energy s.t.d. = 8.232504 meV/atom
+Mean force s.t.d. = 0.260115 eV/Å
+
+gen_172.cif: Ca2MgO6Si
+Raw energy = -6082.795410 eV
+Formation Energy = 101.474684 meV/atom
+Energy s.t.d. = 4.496028 meV/atom
+Mean force s.t.d. = 0.096735 eV/Å
+
+gen_29.cif: Ca2MgO7Si2
+Raw energy = -6712.183594 eV
+Formation Energy = 14.055104 meV/atom
+Energy s.t.d. = 10.037451 meV/atom
+Mean force s.t.d. = 0.237657 eV/Å
+
+gen_30.cif: CaMgOSi
+Raw energy = -2734.343994 eV
+Formation Energy = 3952.504965 meV/atom
+Energy s.t.d. = 10.144842 meV/atom
+Mean force s.t.d. = 0.319753 eV/Å
+
+gen_69.cif: Ca4Mg2O10Si2
+Raw energy = -11244.705078 eV
+Formation Energy = 65.476660 meV/atom
+Energy s.t.d. = 12.793774 meV/atom
+Mean force s.t.d. = 0.298760 eV/Å
+
+gen_31.cif: CaMgOSi
+Raw energy = -2734.378906 eV
+Formation Energy = 3943.776938 meV/atom
+Energy s.t.d. = 8.447114 meV/atom
+Mean force s.t.d. = 0.104762 eV/Å
+
+gen_32.cif: CaMg2Si
+Raw energy = -3355.345947 eV
+Formation Energy = 6559.287934 meV/atom
+Energy s.t.d. = 35.876560 meV/atom
+Mean force s.t.d. = 0.360929 eV/Å
+
+gen_10.cif: Ca2MgO6Si2
+Raw energy = -6246.452148 eV
+Formation Energy = 457.434415 meV/atom
+Energy s.t.d. = 24.143291 meV/atom
+Mean force s.t.d. = 0.490717 eV/Å
+
+gen_197.cif: Ca7Mg2O2Si
+Raw energy = -10428.147461 eV
+Formation Energy = 4254.942672 meV/atom
+Energy s.t.d. = 34.665531 meV/atom
+Mean force s.t.d. = 0.331794 eV/Å
+
+gen_11.cif: Ca2MgO6Si
+Raw energy = -6082.786133 eV
+Formation Energy = 102.402419 meV/atom
+Energy s.t.d. = 4.926353 meV/atom
+Mean force s.t.d. = 0.114178 eV/Å
+
+gen_12.cif: Ca2MgO6Si
+Raw energy = -6082.784668 eV
+Formation Energy = 102.548903 meV/atom
+Energy s.t.d. = 4.918297 meV/atom
+Mean force s.t.d. = 0.107374 eV/Å
+
+gen_13.cif: CaMgO2
+Raw energy = -3042.445068 eV
+Formation Energy = 225.875910 meV/atom
+Energy s.t.d. = 17.876059 meV/atom
+Mean force s.t.d. = 0.201033 eV/Å
+
+gen_14.cif: CaMg2O7Si2
+Raw energy = -6774.849609 eV
+Formation Energy = 40.462969 meV/atom
+Energy s.t.d. = 3.237185 meV/atom
+Mean force s.t.d. = 0.048366 eV/Å
+
+gen_15.cif: CaMg2O7Si2
+Raw energy = -6774.848633 eV
+Formation Energy = 40.544349 meV/atom
+Energy s.t.d. = 3.169634 meV/atom
+Mean force s.t.d. = 0.041266 eV/Å
+
+gen_147.cif: Ca2Mg3O12Si3
+Raw energy = -11368.118164 eV
+Formation Energy = 42.216347 meV/atom
+Energy s.t.d. = 13.274056 meV/atom
+Mean force s.t.d. = 0.285850 eV/Å
+
+gen_16.cif: CaMgO6Si
+Raw energy = -5050.765625 eV
+Formation Energy = 414.447667 meV/atom
+Energy s.t.d. = 4.389589 meV/atom
+Mean force s.t.d. = 0.077829 eV/Å
+
+gen_17.cif: CaO3Si
+Raw energy = -2579.027100 eV
+Formation Energy = 113.231478 meV/atom
+Energy s.t.d. = 12.349464 meV/atom
+Mean force s.t.d. = 0.135209 eV/Å
+
+gen_90.cif: Ca4Mg2O10Si2
+Raw energy = -11244.636719 eV
+Formation Energy = 69.274403 meV/atom
+Energy s.t.d. = 17.478771 meV/atom
+Mean force s.t.d. = 0.277841 eV/Å
+
+gen_18.cif: MgOSi2
+Raw energy = -1869.253662 eV
+Formation Energy = 4814.904723 meV/atom
+Energy s.t.d. = 18.325705 meV/atom
+Mean force s.t.d. = 0.097011 eV/Å
+
+gen_19.cif: CaMgO2Si2
+Raw energy = -3359.258789 eV
+Formation Energy = 3239.553823 meV/atom
+Energy s.t.d. = 19.128098 meV/atom
+Mean force s.t.d. = 0.309467 eV/Å
+
+gen_33.cif: Ca5Mg2O9Si2
+Raw energy = -11801.773438 eV
+Formation Energy = 697.577528 meV/atom
+Energy s.t.d. = 9.877803 meV/atom
+Mean force s.t.d. = 0.486613 eV/Å
+
+gen_91.cif: CaMg2O4Si
+Raw energy = -5217.869141 eV
+Formation Energy = 898.408797 meV/atom
+Energy s.t.d. = 7.875150 meV/atom
+Mean force s.t.d. = 0.072786 eV/Å
+
+gen_34.cif: Ca2MgO6Si
+Raw energy = -6082.805664 eV
+Formation Energy = 100.449294 meV/atom
+Energy s.t.d. = 4.162781 meV/atom
+Mean force s.t.d. = 0.087841 eV/Å
+
+gen_35.cif: MgO2Si
+Raw energy = -2175.648682 eV
+Formation Energy = 1514.789340 meV/atom
+Energy s.t.d. = 9.725524 meV/atom
+Mean force s.t.d. = 0.067193 eV/Å
+
+gen_36.cif: CaMg2O7Si2
+Raw energy = -6773.079102 eV
+Formation Energy = 188.005286 meV/atom
+Energy s.t.d. = 16.670464 meV/atom
+Mean force s.t.d. = 0.271344 eV/Å
+
+gen_198.cif: Ca2Mg3O9Si2
+Raw energy = -9817.064453 eV
+Formation Energy = 101.205242 meV/atom
+Energy s.t.d. = 11.464523 meV/atom
+Mean force s.t.d. = 0.336729 eV/Å
+
+gen_92.cif: CaMgO3Si
+Raw energy = -3664.456055 eV
+Formation Energy = 1239.102552 meV/atom
+Energy s.t.d. = 31.074135 meV/atom
+Mean force s.t.d. = 0.783600 eV/Å
+
+gen_133.cif: Ca2MgO2Si
+Raw energy = -4223.569824 eV
+Formation Energy = 2794.503464 meV/atom
+Energy s.t.d. = 40.703403 meV/atom
+Mean force s.t.d. = 0.571445 eV/Å
+
+gen_199.cif: Mg2OSi
+Raw energy = -2797.669189 eV
+Formation Energy = 3866.933637 meV/atom
+Energy s.t.d. = 13.375133 meV/atom
+Mean force s.t.d. = 0.124054 eV/Å
+
+gen_37.cif: Ca2MgO7Si2
+Raw energy = -6712.155762 eV
+Formation Energy = 16.374440 meV/atom
+Energy s.t.d. = 10.423992 meV/atom
+Mean force s.t.d. = 0.235342 eV/Å
+
+gen_134.cif: CaMgOSi
+Raw energy = -2734.416504 eV
+Formation Energy = 3934.377523 meV/atom
+Energy s.t.d. = 11.602251 meV/atom
+Mean force s.t.d. = 0.152887 eV/Å
+
+gen_93.cif: CaMgO7Si3
+Raw energy = -5845.317383 eV
+Formation Energy = 449.511599 meV/atom
+Energy s.t.d. = 16.316456 meV/atom
+Mean force s.t.d. = 0.396382 eV/Å
+
+gen_38.cif: Ca5MgO2Si3
+Raw energy = -7612.625488 eV
+Formation Energy = 4636.582338 meV/atom
+Energy s.t.d. = 16.680338 meV/atom
+Mean force s.t.d. = 0.195907 eV/Å
+
+gen_94.cif: Ca3O2Si
+Raw energy = -4161.256836 eV
+Formation Energy = 2682.849844 meV/atom
+Energy s.t.d. = 11.493227 meV/atom
+Mean force s.t.d. = 0.431071 eV/Å
+
+gen_95.cif: CaMgOSi
+Raw energy = -2733.538086 eV
+Formation Energy = 4153.982016 meV/atom
+Energy s.t.d. = 13.652627 meV/atom
+Mean force s.t.d. = 0.089914 eV/Å
+
+gen_49.cif: Ca4Mg3O11Si2
+Raw energy = -12798.182617 eV
+Formation Energy = 43.339091 meV/atom
+Energy s.t.d. = 34.738087 meV/atom
+Mean force s.t.d. = 1.683119 eV/Å
+
+gen_39.cif: CaOSi
+Raw energy = -1646.287842 eV
+Formation Energy = 3856.253068 meV/atom
+Energy s.t.d. = 100.836662 meV/atom
+Mean force s.t.d. = 1.841032 eV/Å
+
+gen_96.cif: Ca3MgSi
+Raw energy = -4315.457031 eV
+Formation Energy = 6491.532150 meV/atom
+Energy s.t.d. = 40.042480 meV/atom
+Mean force s.t.d. = 0.309109 eV/Å
+
+gen_97.cif: Ca2OSi
+Raw energy = -2671.688232 eV
+Formation Energy = 3870.717895 meV/atom
+Energy s.t.d. = 13.854309 meV/atom
+Mean force s.t.d. = 0.093206 eV/Å
+
+gen_98.cif: Ca2MgO6Si
+Raw energy = -6082.802246 eV
+Formation Energy = 100.791091 meV/atom
+Energy s.t.d. = 4.224470 meV/atom
+Mean force s.t.d. = 0.091938 eV/Å
+
+gen_70.cif: Ca5MgO11Si3
+Raw energy = -11808.095703 eV
+Formation Energy = 167.357144 meV/atom
+Energy s.t.d. = 19.792389 meV/atom
+Mean force s.t.d. = 0.442535 eV/Å
+
+gen_71.cif: Ca2MgOSi
+Raw energy = -3758.867920 eV
+Formation Energy = 4120.119416 meV/atom
+Energy s.t.d. = 14.150291 meV/atom
+Mean force s.t.d. = 0.106517 eV/Å
+
+gen_72.cif: Mg2OSi
+Raw energy = -2797.633545 eV
+Formation Energy = 3875.844770 meV/atom
+Energy s.t.d. = 13.203742 meV/atom
+Mean force s.t.d. = 0.311274 eV/Å
+
+gen_173.cif: Ca2Mg3O9Si2
+Raw energy = -9817.468750 eV
+Formation Energy = 75.936688 meV/atom
+Energy s.t.d. = 13.767663 meV/atom
+Mean force s.t.d. = 0.309242 eV/Å
+
+gen_135.cif: Mg3O6Si
+Raw energy = -6208.535156 eV
+Formation Energy = 124.082075 meV/atom
+Energy s.t.d. = 15.711306 meV/atom
+Mean force s.t.d. = 0.453979 eV/Å
+
+gen_136.cif: Ca2Mg2O2Si2
+Raw energy = -5469.454590 eV
+Formation Energy = 3856.679770 meV/atom
+Energy s.t.d. = 29.934099 meV/atom
+Mean force s.t.d. = 0.475876 eV/Å
+
+gen_50.cif: Ca2Mg2O2Si2
+Raw energy = -5468.495117 eV
+Formation Energy = 3976.613852 meV/atom
+Energy s.t.d. = 68.688965 meV/atom
+Mean force s.t.d. = 1.778965 eV/Å
+
+gen_73.cif: Ca4Mg2O10Si2
+Raw energy = -11244.980469 eV
+Formation Energy = 50.177181 meV/atom
+Energy s.t.d. = 13.149031 meV/atom
+Mean force s.t.d. = 0.231869 eV/Å
+
+gen_137.cif: CaMg2O7Si2
+Raw energy = -6774.225098 eV
+Formation Energy = 92.505612 meV/atom
+Energy s.t.d. = 16.523777 meV/atom
+Mean force s.t.d. = 0.280146 eV/Å
+
+gen_138.cif: Ca2Mg2O2Si2
+Raw energy = -5465.773926 eV
+Formation Energy = 4316.762777 meV/atom
+Energy s.t.d. = 12.019458 meV/atom
+Mean force s.t.d. = 0.084611 eV/Å
+
+gen_99.cif: CaMg2O4Si
+Raw energy = -5216.831055 eV
+Formation Energy = 1028.169539 meV/atom
+Energy s.t.d. = 18.556656 meV/atom
+Mean force s.t.d. = 0.416056 eV/Å
+
+gen_148.cif: Ca2MgO4Si
+Raw energy = -5157.866699 eV
+Formation Energy = 525.850223 meV/atom
+Energy s.t.d. = 97.164177 meV/atom
+Mean force s.t.d. = 2.244750 eV/Å
+
+gen_139.cif: CaMgO2Si2
+Raw energy = -3359.076172 eV
+Formation Energy = 3269.990021 meV/atom
+Energy s.t.d. = 22.628807 meV/atom
+Mean force s.t.d. = 0.366841 eV/Å
+
+gen_149.cif: CaMgO7Si2
+Raw energy = -5681.908691 eV
+Formation Energy = 102.641872 meV/atom
+Energy s.t.d. = 2.801357 meV/atom
+Mean force s.t.d. = 0.034759 eV/Å
+
+gen_150.cif: CaMg2O7Si2
+Raw energy = -6774.862305 eV
+Formation Energy = 39.405026 meV/atom
+Energy s.t.d. = 3.143210 meV/atom
+Mean force s.t.d. = 0.046574 eV/Å
+
+gen_51.cif: Ca3MgO12Si4
+Raw energy = -10382.890625 eV
+Formation Energy = -76.734350 meV/atom
+Energy s.t.d. = 7.894590 meV/atom
+Mean force s.t.d. = 0.155818 eV/Å
+
+gen_52.cif: Ca2MgO2Si
+Raw energy = -4223.651855 eV
+Formation Energy = 2780.831589 meV/atom
+Energy s.t.d. = 29.777458 meV/atom
+Mean force s.t.d. = 0.462573 eV/Å
+
+gen_74.cif: Ca3MgO12Si4
+Raw energy = -10380.763672 eV
+Formation Energy = 29.613306 meV/atom
+Energy s.t.d. = 11.234196 meV/atom
+Mean force s.t.d. = 0.216417 eV/Å
+
+gen_151.cif: CaMgO4Si2
+Raw energy = -4286.870117 eV
+Formation Energy = 1695.331352 meV/atom
+Energy s.t.d. = 29.515888 meV/atom
+Mean force s.t.d. = 0.852551 eV/Å
+
+gen_152.cif: CaMgOSi
+Raw energy = -2733.530029 eV
+Formation Energy = 4155.996176 meV/atom
+Energy s.t.d. = 14.073744 meV/atom
+Mean force s.t.d. = 0.081017 eV/Å
+
+gen_174.cif: Ca5MgO8Si2
+Raw energy = -10248.733398 eV
+Formation Energy = 776.918348 meV/atom
+Energy s.t.d. = 23.087355 meV/atom
+Mean force s.t.d. = 0.870598 eV/Å
+
+gen_153.cif: CaMg6O2Si3
+Raw energy = -8951.377930 eV
+Formation Energy = 4706.584776 meV/atom
+Energy s.t.d. = 22.842941 meV/atom
+Mean force s.t.d. = 0.336372 eV/Å
+
+gen_53.cif: Ca2Mg2O2Si2
+Raw energy = -5468.755859 eV
+Formation Energy = 3944.021078 meV/atom
+Energy s.t.d. = 30.400637 meV/atom
+Mean force s.t.d. = 0.423422 eV/Å
+
+gen_154.cif: Ca2Mg2O2Si2
+Raw energy = -5468.808594 eV
+Formation Energy = 3937.429281 meV/atom
+Energy s.t.d. = 22.936235 meV/atom
+Mean force s.t.d. = 0.909297 eV/Å
+
+gen_155.cif: CaMg2O4Si
+Raw energy = -5216.538086 eV
+Formation Energy = 1064.790633 meV/atom
+Energy s.t.d. = 6.973344 meV/atom
+Mean force s.t.d. = 0.042828 eV/Å
+
+gen_54.cif: CaMg2O7Si2
+Raw energy = -6774.880371 eV
+Formation Energy = 37.899492 meV/atom
+Energy s.t.d. = 3.246846 meV/atom
+Mean force s.t.d. = 0.044101 eV/Å
+
+gen_156.cif: Ca2MgO6Si
+Raw energy = -6082.803711 eV
+Formation Energy = 100.644606 meV/atom
+Energy s.t.d. = 4.161906 meV/atom
+Mean force s.t.d. = 0.089218 eV/Å
+
+gen_75.cif: Ca2Mg5O8Si
+Raw energy = -11366.955078 eV
+Formation Energy = 486.336680 meV/atom
+Energy s.t.d. = 10.856987 meV/atom
+Mean force s.t.d. = 0.329286 eV/Å
+
+gen_157.cif: Ca3MgO8Si2
+Raw energy = -8203.166016 eV
+Formation Energy = -45.066402 meV/atom
+Energy s.t.d. = 13.392432 meV/atom
+Mean force s.t.d. = 0.170730 eV/Å
+
+gen_158.cif: CaOSi2
+Raw energy = -1807.167358 eV
+Formation Energy = 4590.753150 meV/atom
+Energy s.t.d. = 12.284132 meV/atom
+Mean force s.t.d. = 0.081941 eV/Å
+
+gen_76.cif: CaMg3O4
+Raw energy = -6149.096191 eV
+Formation Energy = 72.982824 meV/atom
+Energy s.t.d. = 12.672370 meV/atom
+Mean force s.t.d. = 0.154961 eV/Å
+
+gen_77.cif: CaMg2O4Si
+Raw energy = -5216.547363 eV
+Formation Energy = 1063.630965 meV/atom
+Energy s.t.d. = 6.759330 meV/atom
+Mean force s.t.d. = 0.037794 eV/Å
+
+gen_78.cif: MgO2Si
+Raw energy = -2175.630615 eV
+Formation Energy = 1519.305941 meV/atom
+Energy s.t.d. = 8.999650 meV/atom
+Mean force s.t.d. = 0.063987 eV/Å
+
+gen_55.cif: Ca2Mg2O8Si2
+Raw energy = -8265.283203 eV
+Formation Energy = 16.770920 meV/atom
+Energy s.t.d. = 14.518650 meV/atom
+Mean force s.t.d. = 0.189578 eV/Å
+
+gen_79.cif: Ca2MgO7Si2
+Raw energy = -6711.902832 eV
+Formation Energy = 37.451914 meV/atom
+Energy s.t.d. = 2.796421 meV/atom
+Mean force s.t.d. = 0.101913 eV/Å
+
+gen_159.cif: CaMgO3
+Raw energy = -3503.929932 eV
+Formation Energy = 57.393672 meV/atom
+Energy s.t.d. = 30.765842 meV/atom
+Mean force s.t.d. = 0.726612 eV/Å
+
+gen_56.cif: CaMgO8Si2
+Raw energy = -6141.544922 eV
+Formation Energy = 196.763177 meV/atom
+Energy s.t.d. = 10.986362 meV/atom
+Mean force s.t.d. = 0.419227 eV/Å
+
+gen_175.cif: CaMg2O7Si2
+Raw energy = -6774.778320 eV
+Formation Energy = 46.403724 meV/atom
+Energy s.t.d. = 17.228075 meV/atom
+Mean force s.t.d. = 0.308180 eV/Å
+
+gen_176.cif: CaMgO2Si2
+Raw energy = -3359.183105 eV
+Formation Energy = 3252.167755 meV/atom
+Energy s.t.d. = 24.395027 meV/atom
+Mean force s.t.d. = 0.350015 eV/Å
+
+gen_177.cif: CaOSi2
+Raw energy = -1807.164795 eV
+Formation Energy = 4591.394020 meV/atom
+Energy s.t.d. = 12.291807 meV/atom
+Mean force s.t.d. = 0.083526 eV/Å
+
+gen_178.cif: CaMgO7Si3
+Raw energy = -5846.233398 eV
+Formation Energy = 373.176964 meV/atom
+Energy s.t.d. = 33.230003 meV/atom
+Mean force s.t.d. = 0.727160 eV/Å
+
+gen_57.cif: Ca4Mg3O11Si2
+Raw energy = -12797.121094 eV
+Formation Energy = 96.415262 meV/atom
+Energy s.t.d. = 12.023667 meV/atom
+Mean force s.t.d. = 0.409833 eV/Å
+
+gen_58.cif: Ca2Mg3O5Si
+Raw energy = -7794.995605 eV
+Formation Energy = 1140.095412 meV/atom
+Energy s.t.d. = 25.484325 meV/atom
+Mean force s.t.d. = 0.331588 eV/Å
+
+gen_59.cif: Ca2MgOSi
+Raw energy = -3758.866455 eV
+Formation Energy = 4120.412384 meV/atom
+Energy s.t.d. = 13.167201 meV/atom
+Mean force s.t.d. = 0.103301 eV/Å
+
+gen_179.cif: CaMg2O7Si2
+Raw energy = -6774.622559 eV
+Formation Energy = 59.383867 meV/atom
+Energy s.t.d. = 17.778240 meV/atom
+Mean force s.t.d. = 0.334883 eV/Å
+
+mgo.cif: Mg4O4
+Raw energy = -6212.324707 eV
+Formation Energy = 42.282121 meV/atom
+Energy s.t.d. = 9.169126 meV/atom
+Mean force s.t.d. = 0.005282 eV/Å
+
+cao.cif: Ca4O4
+Raw energy = -5960.436523 eV
+Formation Energy = 36.850070 meV/atom
+Energy s.t.d. = 16.785082 meV/atom
+Mean force s.t.d. = 0.277409 eV/Å
+
+sio2.cif: O6Si3
+Raw energy = -3267.322266 eV
+Formation Energy = 101.001375 meV/atom
+Energy s.t.d. = 25.400970 meV/atom
+Mean force s.t.d. = 0.205503 eV/Å
+
