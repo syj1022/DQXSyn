@@ -63,23 +63,24 @@ def load_shear_strength_for_structure(directory):
             with open(shear_strength_file, 'r') as f:
                 # Read the first line of the file
                 line = f.readline().strip()
-                logging.debug(f"Raw line: '{line}'")  # Logging instead of printing
+                st.text(f"Raw line: '{line}'")  # Using st.text instead of logging
 
                 # Use regex to extract the GPa value from the string
                 match = re.search(r'\(([\d\.]+)\s*GPa\)', line)
                 if match:
                     # Extract the GPa value as a float
                     shear_strength_gpa = float(match.group(1))
-                    logging.debug(f"Extracted shear strength (GPa): {shear_strength_gpa}")  # Logging instead of printing
+                    st.text(f"Extracted shear strength (GPa): {shear_strength_gpa}")  # Using st.text instead of logging
                     return shear_strength_gpa
                 else:
-                    logging.debug("No match found.")  # Logging instead of printing
+                    st.text("No match found.")  # Using st.text instead of logging
                     return None
         except Exception as e:
-            # In case of any error, log the error and return None
-            logging.error(f"Error: {e}")  # Logging instead of printing
+            # In case of any error, use st.text to show the error and return None
+            st.text(f"Error: {e}")  # Using st.text instead of logging
             return None
     return None
+
 
     
 def load_sorted_data(T, molar_ratios):
