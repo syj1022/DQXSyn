@@ -145,22 +145,18 @@ from collections import defaultdict
 import streamlit as st
 from ase.io import read
 
-# [Keep all your existing functions: parse_formula, get_G_corr, get_O_G_corr, load_sorted_data]
-
 st.title("🔬 Mg-Ca-Si-O Phase Probability")
-
-col1, col2, col3 = st.columns(3)
 
 T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
 O2 = st.slider("O₂ partial pressure (atom)", 0.01, 50.0, 1.0, step=0.1)
 
+col1, col2, col3 = st.columns(3)
 with col1:
     MgO = st.slider("MgO molar ratio", 0.01, 10.0, 1.0, step=0.1)
 with col2:
     CaO = st.slider("CaO molar ratio", 0.01, 10.0, 1.0, step=0.1)
 with col3:
     SiO2 = st.slider("SiO₂ molar ratio", 0.01, 10.0, 1.0, step=0.1)
-
 
 sorted_data = load_sorted_data(T, {
     'CaO': CaO, 'MgO': MgO, 'SiO2': SiO2, 'O2': O2
