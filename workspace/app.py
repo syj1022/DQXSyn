@@ -224,12 +224,13 @@ if 'boltzmann_prob' in df.columns:
     df_top = df.head(30).copy()
     df_top['index'] = range(len(df_top))
 
-    # Add structure path column - points directly to filename in stable directory
-    df_top['structure_path'] = df_top['filename'].apply(
-        lambda x: os.path.join('workspace', 'stable', 'generated', x)
-    )
-
-    # --- Chart code (keep yours here if you have) ---
+    # Add structure path safely
+    if 'filename' in df_top.columns:
+        df_top['structure_path'] = df_top['filename'].apply(
+            lambda x: os.path.join('workspace', 'stable', 'generated', x)
+        )
+    else:
+        df_top['structure_path'] = None
 
     st.subheader("Detailed Data with Structures")
 
