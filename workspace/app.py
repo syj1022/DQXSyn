@@ -140,7 +140,7 @@ def load_sorted_data(T, molar_ratios):
 st.title("🔬 Mg-Ca-Si-O Phase Distribution")
 
 T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
-O2 = st.slider("O₂ partial pressure (atom)", 0.01, 50.0, 1.0, step=0.1)
+O2 = st.slider("O₂ partial pressure", 0.01, 50.0, 1.0, step=0.1)
 
 col1, col2, col3 = st.columns(3)
 with col1:
