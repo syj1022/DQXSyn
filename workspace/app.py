@@ -61,9 +61,9 @@ def load_sorted_data(T, molar_ratios):
     }
 
     G_corr = {
-        'Ca': get_G_corr('ref/cao_mapping.txt', T),
-        'Mg': get_G_corr('ref/mgo_mapping.txt', T),
-        'Si': get_G_corr('ref/sio2_mapping.txt', T),
+        'Ca': get_G_corr('workspace/ref/cao_mapping.txt', T),
+        'Mg': get_G_corr('workspace/ref/mgo_mapping.txt', T),
+        'Si': get_G_corr('workspace/ref/sio2_mapping.txt', T),
         'O': get_O_G_corr(T),
     }
 
@@ -103,7 +103,7 @@ def load_sorted_data(T, molar_ratios):
             continue
 
         index = os.path.basename(dir_path)
-        G_correction = get_G_corr(f'stable/{index}/mapping.txt', T)
+        G_correction = get_G_corr(f'workspace/stable/{index}/mapping.txt', T)
 
         correction = sum((chemical_potentials.get(elem, 0.0)+G_corr.get(elem, 0.0)) * count for elem, count in composition.items())
         n_atoms = sum(composition.values())
