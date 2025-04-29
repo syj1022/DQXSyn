@@ -145,7 +145,7 @@ from collections import defaultdict
 import streamlit as st
 from ase.io import read
 
-st.title("🔬 Mg-Ca-Si-O Phase Probability")
+st.title("🔬 Mg-Ca-Si-O Phase Distribution")
 
 T = st.slider("Temperature (K)", 300, 2000, 1000, step=10)
 O2 = st.slider("O₂ partial pressure (atom)", 0.01, 50.0, 1.0, step=0.1)
