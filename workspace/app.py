@@ -152,7 +152,6 @@ sorted_data = load_sorted_data(T, {
 top_n = 30
 top_structures = sorted_data[:top_n]
 
-st.subheader("📊 Top Structures by Boltzmann Probability")
 st.bar_chart({
     d['formula']: d['boltzmann_prob'] for d in top_structures
 })
