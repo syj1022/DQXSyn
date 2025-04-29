@@ -107,7 +107,7 @@ def load_sorted_data(T, molar_ratios):
 
         index = os.path.basename(dir_path)
         G_correction = get_G_corr(f'workspace/stable/{index}/mapping.txt', T)
-        st.write(index)
+
         correction = sum((chemical_potentials.get(elem, 0.0)+G_corr.get(elem, 0.0)) * count for elem, count in composition.items())
         n_atoms = sum(composition.values())
         corrected_formation_energy = formation_energy - correction / n_atoms
@@ -218,7 +218,7 @@ if 'boltzmann_prob' in df.columns:
 
     def make_structure_path(filename):
         if isinstance(filename, str) and filename.strip():  # Ensure filename is valid
-            return os.path.join('workspace', 'stable', 'generated', filename)
+            return os.path.join('workspace', 'generated', filename)
         else:
             return None
 
