@@ -1,7 +1,4 @@
 streamlit>=1.20
 ase>=3.22
 numpy>=1.23
-py3Dmol>=2.1.0
-st-aggrid>=0.3.4
-pathlib>=1.0.1
-Pillow>=9.3.0
+
