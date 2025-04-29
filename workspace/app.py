@@ -216,3 +216,70 @@ if 'boltzmann_prob' in df.columns:
         height=400,
         use_container_width=True
     )
+
+
+
+
+
+
+# Add this import at the top
+from ase.visualize import view
+import io
+import tempfile
+
+# [Keep all your existing code until the dataframe display]
+
+if 'boltzmann_prob' in df.columns:
+    df_top = df.head(30).copy()
+    df_top['index'] = range(len(df_top))
+    
+    # Add a column for structure visualization
+    df_top['structure'] = df_top['filename'].apply(lambda x: f"workspace/stable/{x.split('_')[0]}/structure.cif")
+    
+    # [Keep your existing chart code]
+    
+    st.subheader("Detailed Data")
+    
+    # Display the dataframe with structure visualization
+    for idx, row in df_top.iterrows():
+        with st.expander(f"{row['formula']} - Probability: {row['boltzmann_prob']:.2%}"):
+            col1, col2 = st.columns([1, 2])
+            
+            with col1:
+                # Display structure information
+                st.write(f"**Formation Energy:** {row['formation_energy']:.3f} eV/atom")
+                st.write(f"**Gibbs Free Energy:** {row['gibbs_formation_energy']:.3f} eV/atom")
+                st.write(f"**Probability:** {row['boltzmann_prob']:.2%}")
+                
+            with col2:
+                # Display the CIF structure
+                cif_path = row['structure']
+                if os.path.exists(cif_path):
+                    try:
+                        # Read the CIF file
+                        atoms = read(cif_path)
+                        
+                        # Create a temporary file for rendering
+                        with tempfile.NamedTemporaryFile(suffix='.cif', delete=False) as tmp:
+                            atoms.write(tmp.name, format='cif')
+                            st.caption("Structure Visualization")
+                            st.code(open(tmp.name).read(), language='cif')
+                            
+                            # Optionally display with py3Dmol
+                            try:
+                                import py3Dmol
+                                view = py3Dmol.view()
+                                view.addModel(open(tmp.name).read(), 'cif')
+                                view.setStyle({'sphere':{'colorscheme':'Jmol','scale':0.3},
+                                             'stick':{'colorscheme':'Jmol','radius':0.2}})
+                                view.zoomTo()
+                                view.show()
+                                st.components.v1.html(view._make_html(), height=300)
+                            except ImportError:
+                                st.warning("Install py3Dmol for 3D visualization: pip install py3Dmol")
+                    except Exception as e:
+                        st.error(f"Could not display structure: {e}")
+                else:
+                    st.warning("Structure file not found")
+    
+    # [Keep your existing chart code]
