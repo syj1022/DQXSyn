@@ -133,10 +133,9 @@ def load_sorted_data(T, molar_ratios):
             continue
 
         shear_dir_path = os.path.join('workspace/shear', os.path.basename(dir_path))
-        st.text(dir_path)
         shear_strength = load_shear_strength_for_structure(shear_dir_path)
 
-        #st.text(f"Checking shear strength for structure: {filename} in {dir_path}")  # Debugging output
+        st.text(f"Checking shear strength for structure: {filename} in {shear_dir_path}")  # Debugging output
         #st.text(f"Shear strength for {filename}: {shear_strength}")  # Debugging output
 
         index = os.path.basename(dir_path)
@@ -174,10 +173,10 @@ def load_sorted_data(T, molar_ratios):
     ]
     weighted_avg_strength = sum(strengths) if strengths else None
 
-    if weighted_avg_strength is not None:
-        st.metric(label="Boltzmann-weighted Avg. Shear Strength", value=f"{weighted_avg_strength:.2f} GPa")
-    else:
-        st.text("Shear strength data missing for most structures.")
+    #if weighted_avg_strength is not None:
+    #    st.metric(label="Boltzmann-weighted Avg. Shear Strength", value=f"{weighted_avg_strength:.2f} GPa")
+    #else:
+    #    st.text("Shear strength data missing for most structures.")
         
     return sorted_data
 
